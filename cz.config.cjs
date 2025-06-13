@@ -40,6 +40,7 @@ module.exports = {
     { name: "errors" },
     { name: "eslint" },
     { name: "hooks" },
+    { name: "husky" },
     { name: "components" },
     { name: "shadcn" },
     { name: "ui" },
