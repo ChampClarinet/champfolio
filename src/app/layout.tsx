@@ -1,5 +1,6 @@
-import { ReactNode } from "react";
+import { type ReactNode } from "react";
 
+import Global from "@/components/molecules/global";
 import { ThemeProvider } from "@/providers/theme";
 
 import "./index.css";
@@ -18,7 +19,7 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          {children}
+          <Global>{children}</Global>
         </ThemeProvider>
       </body>
     </html>
