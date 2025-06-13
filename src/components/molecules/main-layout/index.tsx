@@ -6,7 +6,7 @@ const MainLayout: FC<PropsWithChildren> = ({ children }) => {
   return (
     <div className="flex flex-col">
       <Appbar />
-      <div className="mt-20 flex flex-col">{children}</div>
+      <main className="mt-20 flex flex-col">{children}</main>
     </div>
   );
 };

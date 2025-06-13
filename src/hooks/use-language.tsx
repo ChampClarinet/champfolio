@@ -9,30 +9,26 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
+import { fallbackLangauge, supportedLanguages } from "@/config/langauges";
 import { usePathname } from "next/navigation";
 
 export const useLanguage = () => {
   const pathname = usePathname();
 
-  const supportedLanguages = [
-    { key: "en", label: "English" },
-    { key: "th", label: "ภาษาไทย" },
-    { key: "jp", label: "日本語" },
-  ];
-
   const locale = useMemo(() => {
     if (pathname.startsWith("/th")) return "th";
-    return "en";
+    if (pathname.startsWith("/jp")) return "jp";
+    if (pathname.startsWith("/cn")) return "cn";
+    return fallbackLangauge;
   }, [pathname]);
 
-  const setLocale = (changeTo: string) => {
-    const newPath = pathname.replace(/^\/(en|th|cn|jp)/, "");
-    window.location.href = `/${changeTo}${newPath}`;
-  };
+  const localeText = supportedLanguages.find((lang) => lang.key === locale)?.label ?? "Unknown";
 
-  const toggleLocale = () => {
-    const newPath = pathname.replace(/^\/(en|th)/, "");
-    const newLocale = locale === "en" ? "th" : "en";
+  const setLocale = (changeTo: string) => {
+    const newLocale = supportedLanguages.some((lang) => lang.key === changeTo)
+      ? changeTo
+      : fallbackLangauge;
+    const newPath = pathname.replace(/^\/(en|th|jp|cn)/, "");
     window.location.href = `/${newLocale}${newPath}`;
   };
 
@@ -57,9 +53,9 @@ export const useLanguage = () => {
 
   return {
     locale,
+    localeText,
     languageSelector,
     supportedLanguages,
     setLocale,
-    toggleLocale,
   };
 };
