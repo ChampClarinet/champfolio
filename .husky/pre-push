@@ -1,0 +1,23 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+echo "🔍 Checking version before pushing to main..."
+
+branch=$(git rev-parse --abbrev-ref HEAD)
+
+if [ "$branch" != "main" ]; then
+  echo "🌿 Not pushing to main, skipping version check."
+  exit 0
+fi
+
+# ดึง version จาก main บน remote
+main_version=$(git show origin/main:package.json | grep '"version"' | head -1 | sed -E 's/.*"version": *"(.*)".*/\1/')
+# ดึง version ปัจจุบันใน local
+current_version=$(grep '"version"' package.json | head -1 | sed -E 's/.*"version": *"(.*)".*/\1/')
+
+if [ "$main_version" = "$current_version" ]; then
+  echo "❌ package.json version is still $current_version — must bump before pushing to main!"
+  exit 1
+fi
+
+echo "✅ Version updated: $main_version → $current_version"

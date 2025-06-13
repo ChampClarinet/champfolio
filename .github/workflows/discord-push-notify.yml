@@ -1,0 +1,53 @@
+name: Discord Push Notify
+
+on:
+  push:
+
+env:
+  DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Extract info
+        id: vars
+        run: |
+          echo "branch=${GITHUB_REF#refs/heads/}" >> $GITHUB_OUTPUT
+          echo "commit_msg=${{ github.event.head_commit.message }}" >> $GITHUB_OUTPUT
+          echo "author=${{ github.event.head_commit.author.name }}" >> $GITHUB_OUTPUT
+          echo "commit_url=${{ github.event.head_commit.url }}" >> $GITHUB_OUTPUT
+          echo "repo=${{ github.repository }}" >> $GITHUB_OUTPUT
+          echo "pusher=${{ github.actor }}" >> $GITHUB_OUTPUT
+          echo "compare_url=${{ github.event.compare }}" >> $GITHUB_OUTPUT
+
+      - name: Send to discord
+        run: |
+          curl -X POST "${{ env.DISCORD_WEBHOOK }}" \
+          -H "Content-Type: application/json" \
+          -d @- <<EOF
+          {
+            "embeds": [{
+              "title": "🚀 New Push to \`${{ steps.vars.outputs.branch }}\`",
+              "description": "**${{ steps.vars.outputs.author }}** pushed to **${{ steps.vars.outputs.branch }}** in \`${{ steps.vars.outputs.repo }}\`",
+              "color": 5814783,
+              "fields": [
+                {
+                  "name": "Message",
+                  "value": "${{ steps.vars.outputs.commit_msg }}"
+                },
+                {
+                  "name": "Compare Changes",
+                  "value": "[Click to view diff](${{ steps.vars.outputs.compare_url }})"
+                },
+                {
+                  "name": "Commit URL",
+                  "value": "[View Commit](${{ steps.vars.outputs.commit_url }})"
+                }
+              ],
+              "footer": {
+                "text": "Triggered by ${{ steps.vars.outputs.pusher }}"
+              },
+              "timestamp": "$(date -u +'%Y-%m-%dT%H:%M:%SZ')"
+            }]
+          }

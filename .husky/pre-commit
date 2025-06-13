@@ -1,0 +1,11 @@
+#!/bin/sh
+
+branch_name=$(git symbolic-ref --short HEAD)
+
+if [ "$branch_name" = "main" ]; then
+  echo "❌ Direct commits to main are not allowed. Please commit to release/* or hotfix/* branches and create a Pull Request."
+  exit 1
+fi
+
+npx lint-staged
+exit 0

@@ -1,0 +1,16 @@
+name: Validate PR source branch
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  check-source-branch:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check PR source branch
+        if: startsWith(github.head_ref, 'release/') == false && startsWith(github.head_ref, 'hotfix/') == false
+        run: |
+          echo "Pull Request must be from release/* or hotfix/* branches only!"
+          exit 1
