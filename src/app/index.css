@@ -84,6 +84,7 @@
 
 :root {
   --radius: 1rem;
+
   --blue-medium: oklch(52.164% 0.04604 242.16); /*#526D82*/
   --blue-light: oklch(92.017% 0.01368 241.191); /*#DDE6ED*/
   --blue-dark: oklch(33.315% 0.04455 256.516); /*#27374D*/
