@@ -3,8 +3,14 @@ import type { ReactNode } from "react";
 import Global from "@/components/molecules/global";
 import { routing } from "@/i18n/routing";
 import { ThemeProvider } from "@/providers/theme";
+import type { Metadata } from "next";
 import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { notFound } from "next/navigation";
+
+export const metadata: Metadata = {
+  title: "Champfolio",
+  description: "Wallop Opasakhun's portfolio",
+};
 
 export default async function LocaleLayout({
   children,
