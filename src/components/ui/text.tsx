@@ -8,6 +8,8 @@ const textVariants = cva("leading-6", {
     variant: {
       base: "text-base",
       logo: "font-oleo !text-black dark:text-foreground! text-3xl select-none",
+      title: "font-semibold text-4xl",
+      subtitle: "text-base md:text-xl",
     },
     intensity: {
       normal: "text-foreground",
