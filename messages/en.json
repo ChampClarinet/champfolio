@@ -1,5 +1,9 @@
 {
   "General": {
     "greeting": "Hello, my name is Champ.\n“Music is the universal language of mankind.” — Henry Wadsworth Longfellow"
+  },
+  "Hero": {
+    "hello": "Hello, I'm <u>Wallop Opasakhun</u>, Front-end Developer",
+    "introduce": "Hi, I'm Wallop (“Champ”) — a frontend web developer at <synapes>Synapes</synapes> and CTO at Ezygroup Innovation. I specialize in building scalable, responsive UIs using <react>React</react> (<nextjs>Next.js</nextjs>), <ts>TypeScript</ts>, <bun>Bun</bun> and <flutter>Flutter</flutter>. While I occasionally work on backend systems with <django>Django</django> or <node>Node.js</node>, and handle Dockerization and GitHub CI/CD, my primary focus is crafting clean, maintainable code and delivering seamless user experiences across platforms. I'm passionate about clean and seamless code, and seeking for new experiences. 🎸🌱"
   }
 }
