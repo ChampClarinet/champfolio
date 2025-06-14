@@ -8,7 +8,7 @@ const MainLayout: FC<PropsWithChildren> = ({ children }) => {
   return (
     <div className="flex flex-col">
       <Appbar />
-      <ScrollArea className="mt-20 h-[calc(100vh_-_80px)]">
+      <ScrollArea id="main" className="mt-20 h-[calc(100vh_-_80px)]">
         <main className="flex flex-col">{children}</main>
       </ScrollArea>
     </div>

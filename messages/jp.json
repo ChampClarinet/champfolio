@@ -1,5 +1,9 @@
 {
   "General": {
     "greeting": "こんにちは、勝です。\n「音楽は人類共通の言語である。」 — ヘンリー・ワズワース・ロングフェロー"
+  },
+  "Hero": {
+    "hello": "こんにちは、<u>麥勝</u>、フロントエンド開発者です",
+    "introduce": "こんにちは、まさると申します — <synapes>Synapes</synapes> のフロントエンドWebデベロッパーであり、Ezygroup Innovation の CTO です。<react>React</react> (<nextjs>Next.js</nextjs>）、<ts>TypeScript</ts>、<bun>Bun</bun>、<flutter>Flutter</flutter> をメインに使用してフロントエンド開発を行っています。バックエンドも <django>Django</django> や <node>Node.js</node> を少し扱うことができ、Docker や GitHub CI/CD の環境構築も経験があります。クリーンで保守性の高いコードを心がけており、あらゆるプラットフォームでシームレスなユーザー体験を提供することを目指しています。そして、常に新しい知識と経験を求めることが大好きです 🎸🌱"
   }
 }

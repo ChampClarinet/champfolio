@@ -1,6 +1,6 @@
 "use client";
 
-import { type FC, type RefObject, useRef } from "react";
+import { type FC } from "react";
 
 import { Button } from "@/components/ui/button";
 import {
@@ -10,6 +10,7 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import { Text } from "@/components/ui/text";
+import { email } from "@/config/links";
 import { useLanguage } from "@/hooks/use-language";
 import { useMounted } from "@/hooks/use-mounted";
 import { useTheme } from "@/hooks/use-theme";
@@ -20,37 +21,35 @@ const Appbar: FC = () => {
   const { resolvedTheme, switcher, setTheme } = useTheme();
   const { languageSelector } = useLanguage();
 
-  const aboutRef = useRef<HTMLDivElement>(null);
-  const portfolioRef = useRef<HTMLDivElement>(null);
-  const contactRef = useRef<HTMLDivElement>(null);
-
   const handleHireMe = () => {
-    //TODO
+    window.open(email);
   };
 
-  const slideTo = (ref: RefObject<HTMLDivElement | null>) => {
-    if (ref.current) {
-      window.scrollTo({
-        top: ref.current.offsetTop,
-        behavior: "smooth",
-      });
+  const slideToSection = (sectionId: string) => {
+    if (typeof window == "undefined") return;
+    const elem = document.querySelector(`section#${sectionId}`);
+    if (elem) {
+      elem.scrollIntoView({ behavior: "smooth", block: "start" });
     }
   };
 
   const goToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
+    if (typeof window != "undefined") {
+      const mainEl = document.querySelector("#main > div");
+      if (mainEl) {
+        mainEl.scrollTo({ top: 0, behavior: "smooth" });
+        return;
+      }
+    }
   };
 
   const mobileMenuClasses = cn("px-4 py-2 text-lg capitalize");
 
   const items = [
     { label: "home", onClick: goToTop },
-    { label: "about", onClick: () => slideTo(aboutRef) },
-    { label: "portfolio", onClick: () => slideTo(portfolioRef) },
-    { label: "contact", onClick: () => slideTo(contactRef) },
+    { label: "about", onClick: () => slideToSection("about") },
+    { label: "portfolio", onClick: () => slideToSection("portfolio") },
+    { label: "contact", onClick: () => slideToSection("contact") },
   ];
 
   const mounted = useMounted();

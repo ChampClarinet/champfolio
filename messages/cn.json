@@ -1,5 +1,9 @@
 {
   "General": {
     "greeting": "你好，我叫麥凱勝。\n「音樂是人類的共通語言。」 — 亨利·沃茲沃斯·朗費羅"
+  },
+  "Hero": {
+    "hello": "你好，我是 <u>麥凱勝</u>，一名前端开发工程师",
+    "introduce": "你好，我是麥凱勝 —— 來自 <synapes>Synapes</synapes> 的前端開發人員，同時也是 Ezygroup Innovation 的 CTO。我主要使用 <react>React</react>（<nextjs>Next.js</nextjs>）、<ts>TypeScript</ts>、<bun>Bun</bun> 和 <flutter>Flutter</flutter> 進行前端開發。後端方面，我也能夠使用 <django>Django</django> 和 <node>Node.js</node>，並具備使用 Docker 和 GitHub CI/CD 的一些經驗。我注重撰寫乾淨且易於維護的程式碼，致力於在各種平台上打造無縫的使用者體驗。我熱愛學習新知識與持續探索新的體驗 🎸🌱"
   }
 }
