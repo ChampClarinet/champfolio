@@ -7,6 +7,7 @@ import Socials from "@/components/molecules/socials";
 import { Avatar, AvatarImage } from "@/components/ui/avatar";
 import { Text } from "@/components/ui/text";
 import { bun, django, flutter, nextjs, nodejs, react, synapes, typescript } from "@/config/links";
+import { slideToSection } from "@/utils/utils";
 import { useBreakpoint } from "@cantabile/hooks";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
@@ -17,12 +18,12 @@ const HeroSection: FC = () => {
   const goTo = (url: string) => window.open(url, "_blank", "noreferrer");
 
   const handleGoDown = () => {
-    //TODO
+    slideToSection("about");
   };
 
   const isMobile = useBreakpoint(768);
   return (
-    <section className="flex min-h-[calc(100vh_-_80px)] shrink flex-col items-center justify-around py-5">
+    <section className="hero-section flex min-h-[calc(100vh_-_80px)] shrink flex-col items-center justify-around py-5">
       <div className="@container flex w-full flex-col items-center p-5 md:max-w-[min(80%,_850px)] portrait:gap-14 landscape:gap-10">
         <Avatar className="border-blue-medium h-[200px] w-[200px] shrink border-8 border-solid shadow-xl">
           <AvatarImage src="/images/me.jpg" alt="Wallop Opasakhun" />

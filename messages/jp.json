@@ -5,5 +5,18 @@
   "Hero": {
     "hello": "こんにちは、<u>麥勝</u>、フロントエンド開発者です",
     "introduce": "こんにちは、まさると申します — <synapes>Synapes</synapes> のフロントエンドWebデベロッパーであり、Ezygroup Innovation の CTO です。<react>React</react> (<nextjs>Next.js</nextjs>）、<ts>TypeScript</ts>、<bun>Bun</bun>、<flutter>Flutter</flutter> をメインに使用してフロントエンド開発を行っています。バックエンドも <django>Django</django> や <node>Node.js</node> を少し扱うことができ、Docker や GitHub CI/CD の環境構築も経験があります。クリーンで保守性の高いコードを心がけており、あらゆるプラットフォームでシームレスなユーザー体験を提供することを目指しています。そして、常に新しい知識と経験を求めることが大好きです 🎸🌱"
+  },
+  "About": {
+    "header": "クリーンで拡張可能な\nアプリとシステムを構築",
+    "about": "Next.js と Flutter に特化したウェブ開発者で、デザインに基づく UI の開発と組み立てを行い、ウェブとモバイルアプリの両方で高速かつレスポンシブなパフォーマンスを提供します。Docker を用いたコンテナ管理およびプロダクショングレードのアプリ開発経験があり、フロントエンド、バックエンド、DevOps システムに関する包括的な理解を持ち、安定的でメンテナンスしやすく効率的なソフトウェアを提供します。",
+    "downloadcv": "CV ダウンロード",
+    "meta": [
+      { "key": "名前", "value": "麥勝" },
+      { "key": "年齢", "value": "31 歳" },
+      { "key": "国籍", "value": "タイ" },
+      { "key": "電話番号", "value": "+66819543213" },
+      { "key": "言語", "value": "タイ語, 英語" },
+      { "key": "フリーランス", "value": "対応可能" }
+    ]
   }
 }

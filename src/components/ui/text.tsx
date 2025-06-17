@@ -10,10 +10,12 @@ const textVariants = cva("leading-6", {
       logo: "font-oleo !text-black dark:text-foreground! text-3xl select-none",
       title: "font-semibold text-4xl",
       subtitle: "text-base md:text-xl",
+      "small-heading": "uppercase underline text-blue-light text-3xl font-medium",
+      small: "text-xs",
     },
     intensity: {
       normal: "text-foreground",
-      faded: "text-muted-foreground",
+      faded: "text-foreground/70 dark:text-blue-light",
     },
   },
   defaultVariants: {

@@ -14,7 +14,7 @@ import { email } from "@/config/links";
 import { useLanguage } from "@/hooks/use-language";
 import { useMounted } from "@/hooks/use-mounted";
 import { useTheme } from "@/hooks/use-theme";
-import { cn } from "@/utils/utils";
+import { cn, slideToSection } from "@/utils/utils";
 import { MenuIcon } from "lucide-react";
 
 const Appbar: FC = () => {
@@ -23,14 +23,6 @@ const Appbar: FC = () => {
 
   const handleHireMe = () => {
     window.open(email);
-  };
-
-  const slideToSection = (sectionId: string) => {
-    if (typeof window == "undefined") return;
-    const elem = document.querySelector(`section#${sectionId}`);
-    if (elem) {
-      elem.scrollIntoView({ behavior: "smooth", block: "start" });
-    }
   };
 
   const goToTop = () => {
@@ -84,7 +76,7 @@ const Appbar: FC = () => {
 
         <div className="flex items-center gap-4">
           <div className="hidden md:flex">
-            <nav className="menu flex items-stretch gap-2">
+            <nav className="menu mr-2 flex items-stretch gap-2">
               {items.map(({ label, onClick }, i) => (
                 <Button
                   key={i}

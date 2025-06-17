@@ -5,5 +5,18 @@
   "Hero": {
     "hello": "你好，我是 <u>麥凱勝</u>，一名前端开发工程师",
     "introduce": "你好，我是麥凱勝 —— 來自 <synapes>Synapes</synapes> 的前端開發人員，同時也是 Ezygroup Innovation 的 CTO。我主要使用 <react>React</react>（<nextjs>Next.js</nextjs>）、<ts>TypeScript</ts>、<bun>Bun</bun> 和 <flutter>Flutter</flutter> 進行前端開發。後端方面，我也能夠使用 <django>Django</django> 和 <node>Node.js</node>，並具備使用 Docker 和 GitHub CI/CD 的一些經驗。我注重撰寫乾淨且易於維護的程式碼，致力於在各種平台上打造無縫的使用者體驗。我熱愛學習新知識與持續探索新的體驗 🎸🌱"
+  },
+  "About": {
+    "header": "打造乾淨且可擴展的\n應用程式與系統",
+    "about": "專精於 Next.js 和 Flutter 的網頁開發者，負責依照設計開發與組裝使用者介面，提供快速且響應良好的網頁與行動應用體驗。具備使用 Docker 進行容器化管理及開發生產級應用的經驗，並對前端、後端及 DevOps 系統有全面的理解，致力於交付穩定、易維護且高效能的軟體。",
+    "downloadcv": "下載 CV",
+    "meta": [
+      { "key": "姓名", "value": "麥凱勝" },
+      { "key": "年齡", "value": "31 歲" },
+      { "key": "國籍", "value": "泰國" },
+      { "key": "電話", "value": "+66819543213" },
+      { "key": "語言", "value": "泰語, 英語" },
+      { "key": "自由職業", "value": "可接案" }
+    ]
   }
 }

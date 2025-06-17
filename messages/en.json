@@ -5,5 +5,18 @@
   "Hero": {
     "hello": "Hello, I'm <u>Wallop Opasakhun</u>, Front-end Developer",
     "introduce": "Hi, I'm Wallop (“Champ”) — a frontend web developer at <synapes>Synapes</synapes> and CTO at Ezygroup Innovation. I specialize in building scalable, responsive UIs using <react>React</react> (<nextjs>Next.js</nextjs>), <ts>TypeScript</ts>, <bun>Bun</bun> and <flutter>Flutter</flutter>. While I occasionally work on backend systems with <django>Django</django> or <node>Node.js</node>, and handle Dockerization and GitHub CI/CD, my primary focus is crafting clean, maintainable code and delivering seamless user experiences across platforms. I'm passionate about clean and seamless code, and seeking for new experiences. 🎸🌱"
+  },
+  "About": {
+    "header": "Build clean & scalable\napps and systems",
+    "about": "A web developer specialized in Next.js and Flutter for developing and assembling UI based on designs, delivering fast and responsive performance on both web and mobile applications. Experienced in using Docker for containerization and developing production-grade applications, with a comprehensive understanding of frontend, backend, and DevOps systems to deliver stable, maintainable, and efficient software.",
+    "downloadcv": "Download CV",
+    "meta": [
+      { "key": "name", "value": "Wallop Opasakhun" },
+      { "key": "age", "value": "31 Years" },
+      { "key": "nationality", "value": "Thai" },
+      { "key": "phone", "value": "+66819543213" },
+      { "key": "languages", "value": "Thai, English" },
+      { "key": "freelance", "value": "available" }
+    ]
   }
 }
