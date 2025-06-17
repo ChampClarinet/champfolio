@@ -24,7 +24,15 @@
       "education": "Education",
       "works": "Work Experience",
       "labassistant": "Lab Assistant Experience",
-      "competitions": "Competitions Experience"
+      "competitions": "Competitions Experience",
+      "language": "Languages",
+      "skills": "Skills",
+      "nondevskills": "Non-developing skills",
+      "music": "music",
+      "academic": "academics",
+      "hobbies": "hobbies",
+      "homeAndPets": "home and pets",
+      "pets": "pets"
     },
     "education": [
       {

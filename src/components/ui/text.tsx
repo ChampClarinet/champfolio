@@ -11,6 +11,7 @@ const textVariants = cva("leading-6", {
       title: "font-semibold text-4xl",
       subtitle: "text-base md:text-xl",
       "small-heading": "uppercase underline text-blue-light text-3xl font-medium",
+      heading: "uppercase underline text-blue-light text-5xl font-medium",
       small: "text-xs",
     },
     intensity: {
