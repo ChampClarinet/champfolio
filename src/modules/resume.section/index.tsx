@@ -7,6 +7,7 @@ import { Text } from "@/components/ui/text";
 import { fadeIn } from "@/config/animations";
 import { motion } from "motion/react";
 
+import AISkills from "./components/ai";
 import Education from "./components/education";
 import Labs from "./components/labs";
 import Languages from "./components/languages";
@@ -65,6 +66,17 @@ const ResumeSection: FC = () => {
           className="w-full"
         >
           <Skills />
+        </motion.div>
+
+        {/* 💻 AI Skills */}
+        <motion.div
+          variants={fadeIn}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          className="w-full"
+        >
+          <AISkills />
         </motion.div>
 
         {/* 🌐 Languages */}

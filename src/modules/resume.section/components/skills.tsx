@@ -2,15 +2,15 @@
 
 import { type FC } from "react";
 
-import { Badge } from "@/components/ui/badge";
 import { Text } from "@/components/ui/text";
 import { Tooltip, TooltipContent, TooltipTrigger } from "@/components/ui/tooltip";
-import { useScopedTranslations } from "@/hooks/use-scope-translation";
 import { useTranslations } from "next-intl";
+
+import { skills } from "../skills-list";
+import Badge from "./badge";
 
 const Skills: FC = () => {
   const t = useTranslations("Resume");
-  const skills = useScopedTranslations<{ title: string; years: number }[]>("Resume.skills");
   return (
     <div className="flex flex-col gap-4">
       <Text variant="small-heading" className="text-xl font-bold">
@@ -21,10 +21,10 @@ const Skills: FC = () => {
         {skills.map(({ title, years }, i) => (
           <Tooltip key={i}>
             <TooltipTrigger>
-              <Badge className="bg-blue-medium rounded-md text-white capitalize">{title}</Badge>
+              <Badge>{title}</Badge>
             </TooltipTrigger>
             <TooltipContent>
-              <p>{`${years} year(s)`}</p>
+              <p>{`${years} year${years > 1 ? "s" : ""}`}</p>
             </TooltipContent>
           </Tooltip>
         ))}
