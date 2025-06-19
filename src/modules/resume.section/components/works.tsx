@@ -16,7 +16,7 @@ const Works: FC = () => {
         date,
         icon: "job",
         title,
-        description: [institution, description],
+        description: [`**${institution}**`, description],
         references,
       }))}
     />

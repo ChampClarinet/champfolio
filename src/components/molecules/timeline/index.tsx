@@ -4,6 +4,7 @@ import Grad from "@/assets/graduation-cap.svg";
 import Job from "@/assets/job.svg";
 import { Badge } from "@/components/ui/badge";
 import { Text } from "@/components/ui/text";
+import { marked } from "marked";
 import Image from "next/image";
 
 export interface TimelineProps {
@@ -41,14 +42,16 @@ const Timeline: FC<TimelineProps> = ({ items, heading }) => {
               <Text className="font-semibold text-white">{title}</Text>
               <div className="flex flex-col gap-1">
                 {description.map((s, i) => (
-                  <Text className="text-blue-gray text-xs" key={i}>
-                    {s}
-                  </Text>
+                  <div
+                    className="*:text-blue-gray *:text-xs"
+                    key={i}
+                    dangerouslySetInnerHTML={{ __html: marked(s) }}
+                  />
                 ))}
               </div>
               {!!references?.length && (
                 <div className="flex flex-col">
-                  <Text variant="small" className="text-blue-gray">
+                  <Text variant="small" className="text-blue-gray font-semibold">
                     References:
                   </Text>
                   <div className="flex flex-col gap-1">

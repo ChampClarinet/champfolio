@@ -16,7 +16,7 @@ const Education: FC = () => {
         date,
         icon: "education",
         title,
-        description: [institution, major],
+        description: [`**${institution}**`, major],
       }))}
     />
   );
