@@ -22,9 +22,17 @@
   "Resume": {
     "titles": {
       "education": "学歴",
-      "works": "職務経験",
-      "labassistant": "ラボアシスタント経験",
-      "competitions": "コンペ経験"
+      "works": "職務経歴",
+      "labassistant": "TA・実験補助経験",
+      "competitions": "コンテスト経験",
+      "language": "言語スキル",
+      "skills": "開発スキル",
+      "nondevskills": "その他スキル・関心",
+      "music": "音楽",
+      "academic": "学術・知識",
+      "hobbies": "趣味",
+      "homeAndPets": "生活・ペット",
+      "pets": "ペット"
     },
     "education": [
       {

@@ -22,10 +22,18 @@
 
   "Resume": {
     "titles": {
-      "education": "教育背景",
-      "works": "工作经验",
-      "labassistant": "实验室助教经验",
-      "competitions": "竞赛经验"
+      "education": "學歷",
+      "works": "工作經歷",
+      "labassistant": "助教經驗",
+      "competitions": "競賽經驗",
+      "language": "語言能力",
+      "skills": "開發技能",
+      "nondevskills": "其他技能與興趣",
+      "music": "音樂",
+      "academic": "學術領域",
+      "hobbies": "興趣嗜好",
+      "homeAndPets": "居家與寵物",
+      "pets": "寵物"
     },
     "education": [
       {

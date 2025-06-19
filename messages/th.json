@@ -24,7 +24,15 @@
       "education": "การศึกษา",
       "works": "ประสบการณ์ทำงาน",
       "labassistant": "ประสบการณ์ผู้ช่วยสอนในห้องปฏิบัติการ",
-      "competitions": "ประสบการณ์แข่งขัน"
+      "competitions": "ประสบการณ์แข่งขัน",
+      "language": "ภาษา",
+      "skills": "ทักษะ",
+      "nondevskills": "ทักษะอื่นๆ",
+      "music": "ดนตรี",
+      "academic": "การศึกษา",
+      "hobbies": "งานอดิเรก",
+      "homeAndPets": "บ้านและสัตว์เลี้ยง",
+      "pets": "สัตว์เลี้ยง"
     },
     "education": [
       {
