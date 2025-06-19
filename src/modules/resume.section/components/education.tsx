@@ -7,16 +7,16 @@ import { useScopedTranslations } from "@/hooks/use-scope-translation";
 import { useTranslations } from "next-intl";
 
 const Education: FC = () => {
-  const t = useTranslations();
+  const t = useTranslations("Resume");
   const items = useScopedTranslations<EducationItem[]>("Resume.education");
   return (
     <Timeline
-      heading={t("titles.education")}
+      heading={t("titles.academic")}
       items={items.map(({ date, institution, major, title }) => ({
         date,
         icon: "education",
         title,
-        description: `${institution}\n${major}`,
+        description: [institution, major],
       }))}
     />
   );
