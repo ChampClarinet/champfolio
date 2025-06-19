@@ -18,5 +18,166 @@
       { "key": "語言", "value": "泰語, 英語" },
       { "key": "自由職業", "value": "可接案" }
     ]
+  },
+
+  "Resume": {
+    "titles": {
+      "education": "學歷",
+      "works": "工作經歷",
+      "labassistant": "助教經驗",
+      "competitions": "競賽經驗",
+      "language": "語言能力",
+      "skills": "開發技能",
+      "nondevskills": "其他技能與興趣",
+      "music": "音樂",
+      "academic": "學術領域",
+      "hobbies": "興趣嗜好",
+      "homeAndPets": "居家與寵物",
+      "pets": "寵物"
+    },
+    "education": [
+      {
+        "title": "小学至高中",
+        "major": "数学 - 科学项目",
+        "institution": "曼谷基督教书院",
+        "date": "2000 - 2012"
+      },
+      {
+        "title": "理学学士 信息技术专业",
+        "major": "信息技术",
+        "institution": "藝術大學",
+        "date": "2012 - 2018"
+      }
+    ],
+    "works": [
+      {
+        "date": "2022年5月 - 至今",
+        "title": "前端开发工程师 (全职)",
+        "institution": "Synapes (Thailand)有限公司",
+        "description": "使用Next.js开发网页界面，使用Flutter开发Android应用，负责公司AI产品（如Selen AI）及外部客户项目的前端开发，同时维护GitHub Actions和Docker的CI/CD流程。",
+        "references": ["https://synapes.ai", "https://selen.ai", "https://senergythailand.com"]
+      },
+      {
+        "date": "2021年8月 - 2022年4月",
+        "title": "前端开发工程师 (自由职业)",
+        "institution": "SIMPLI Finance Lab",
+        "description": "为DeFi投资工具开发网站，使用现代网络技术。SIMPLI是一家泰国金融科技创业公司，利用AI分析Binance Smart Chain上的收益、波动和风险，帮助用户优化投资组合。项目获得2021年SCB10X DeFi Launchpad黑客松亚军。"
+      },
+      {
+        "date": "2021年10月 - 2022年3月",
+        "title": "全栈开发工程师 (合同)",
+        "institution": "SCG泰国",
+        "description": "开发企业内部后台管理系统，支持组织运营。"
+      },
+      {
+        "date": "2020年7月 - 2020年10月",
+        "title": "系统分析师及Laravel开发者",
+        "institution": "诗巴丹大学 研究创新管理办公室",
+        "description": "设计并开发基于Laravel的共享办公空间预订系统。"
+      },
+      {
+        "date": "2018年8月 - 至今",
+        "title": "CTO及全栈开发工程师",
+        "institution": "Ezygroup Innovation有限公司",
+        "description": "负责EzyGas智能燃气配送平台的维护和开发，帮助中小型燃气商户实现便捷管理，采用React、Next.js、Django、PostgreSQL、Docker及AWS EC2等技术，并参与公司其他项目。",
+        "references": ["https://ezygas.co"]
+      }
+    ],
+    "labassistant": [
+      {
+        "date": "2013 - 2018",
+        "title": "计算机程序设计 I 助教",
+        "subtitle": "C语言",
+        "description": "教授C语言编程基础，支持实验课程。"
+      },
+      {
+        "date": "2016",
+        "title": "计算机程序设计 II 助教",
+        "subtitle": "Java语言",
+        "description": "辅导Java编程练习，解决代码问题，讲解面向对象编程。"
+      },
+      {
+        "date": "2016",
+        "title": "科学与工程计算 助教",
+        "subtitle": "Matlab",
+        "description": "指导学生解决使用Matlab进行科学计算时遇到的问题。"
+      },
+      {
+        "date": "2017",
+        "title": "数据结构 助教",
+        "subtitle": "Java语言",
+        "description": "帮助理解和应用Java中的基本数据结构。"
+      },
+      {
+        "date": "2018",
+        "title": "数据库系统 助教",
+        "subtitle": "MySQL",
+        "description": "支持SQL查询编写及数据库设计。"
+      },
+      {
+        "date": "2018",
+        "title": "面向对象软件开发 助教",
+        "subtitle": "Java语言",
+        "description": "教授面向对象设计和Java应用开发。"
+      }
+    ],
+    "languages": {
+      "levels": ["初级", "基础", "中级", "高级", "母语"],
+      "skills": [
+        { "title": "泰语", "level": 4 },
+        { "title": "英语", "level": 3 },
+        { "title": "中文", "level": 0 },
+        { "title": "日语", "level": 1 }
+      ]
+    },
+    "skills": [
+      { "title": "HTML", "years": 7 },
+      { "title": "CSS", "years": 7 },
+      { "title": "React", "years": 7 },
+      { "title": "Next.js", "years": 5 },
+      { "title": "Django", "years": 5 },
+      { "title": "Tailwind CSS", "years": 3 },
+      { "title": "TypeScript", "years": 6 },
+      { "title": "Python3", "years": 3 },
+      { "title": "MSSQL", "years": 1 },
+      { "title": "PostgreSQL", "years": 5 },
+      { "title": "Laravel", "years": 1 },
+      { "title": "Bun", "years": 1 },
+      { "title": "Node.js", "years": 2 },
+      { "title": "AWS EC2", "years": 5 },
+      { "title": "Docker", "years": 5 },
+      { "title": "GatsbyJS", "years": 1 }
+    ],
+    "nonDevSkillsAndInterests": {
+      "music": [
+        "🎸 电吉他",
+        "🎵 吉他",
+        "🎶 贝斯",
+        "🥁 鼓",
+        "🎤 唱歌",
+        "🎹 钢琴",
+        "🎼 单簧管",
+        "🎷 萨克斯管",
+        "🎧 音乐编排"
+      ],
+      "academic": ["🧠 哲学", "📐 数学", "🩺 生理学", "🔬 科学", "🗾 日语", "📚 历史"],
+      "hobbies": ["✈️ 旅行", "📈 投资", "🎮 游戏"],
+      "homeAndPets": ["🏡 家居装饰", "🐾 宠物照顾"]
+    },
+    "pets": [
+      "🐺 Silver the Husky Boi",
+      "🐠 Carps & Ranchus the Hungry Gang",
+      "🐹 Robo Hamsters Twin Speedsters",
+      "🐶 Croissant the Loud Pom",
+      "🐱 Sandy the Alpha Thug",
+      "🐱 Nemo the Foldy Fave",
+      "🐱 Elza the Silent Stare",
+      "🐱 Selene the Grumpy Fold",
+      "🐱 Chalarm the Badass Thug",
+      "🐈 Jorn the Wild Spark",
+      "🐺 Titan the Lost Rebel",
+      "❄️ Winter the Quiet Ghost",
+      "🐕 Chester the Sneaky Charmer"
+    ]
   }
 }

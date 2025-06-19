@@ -18,5 +18,184 @@
       { "key": "languages", "value": "Thai, English" },
       { "key": "freelance", "value": "available" }
     ]
+  },
+  "Resume": {
+    "titles": {
+      "education": "Education",
+      "works": "Work Experience",
+      "labassistant": "Lab Assistant Experience",
+      "competitions": "Competitions Experience",
+      "language": "Languages",
+      "skills": "Skills",
+      "nondevskills": "Non-developing skills",
+      "music": "music",
+      "academic": "academics",
+      "hobbies": "hobbies",
+      "homeAndPets": "home and pets",
+      "pets": "pets"
+    },
+    "education": [
+      {
+        "title": "Primary to High School",
+        "major": "Mathematics - Science Program",
+        "institution": "Bangkok Christian College",
+        "date": "2000 - 2012"
+      },
+      {
+        "title": "Bachelor of Science in Information Technology",
+        "major": "Information Technology",
+        "institution": "Faculty of Science, Silpakorn University",
+        "date": "2012 - 2018"
+      }
+    ],
+    "works": [
+      {
+        "date": "May 2022 - Present",
+        "title": "Frontend Developer (Full-time)",
+        "institution": "Synapes (Thailand) Co., Ltd.",
+        "description": "Developing frontend interfaces with Flutter and Next.js for both in-house AI products like Selen AI and external client projects contracted to the company. Also involved in CI/CD pipelines using GitHub Actions and Docker.",
+        "references": ["https://synapes.ai", "https://selen.ai", "https://senergythailand.com"]
+      },
+      {
+        "date": "August 2021 - April 2022",
+        "title": "Frontend Developer (Freelance)",
+        "institution": "SIMPLI Finance Lab",
+        "description": "Developed frontend components for DeFi investment tools using modern web technologies. SIMPLI is a Thai FinTech startup integrating AI to analyze yield, volatility, and impermanent loss across platforms on Binance Smart Chain, helping users optimize decentralized investment portfolios. The project won 2nd place at the SCB10X DeFi Launchpad Hackathon 2021."
+      },
+      {
+        "date": "October 2021 - March 2022",
+        "title": "Contract Full-stack Developer",
+        "institution": "SCG Thailand",
+        "description": "Built internal back-office web systems for enterprise operations. Worked closely with in-house teams to deliver scalable and maintainable web solutions."
+      },
+      {
+        "date": "July 2020 - October 2020",
+        "title": "System Analyst & Laravel Developer",
+        "institution": "Silpakorn University Research, Innovation and Creativity Administration Office",
+        "description": "Designed and developed a Laravel-based co-working space booking system for Silpakorn University's Research, Innovation and Creativity Administration Office."
+      },
+      {
+        "date": "August 2018 - Present",
+        "title": "CTO & Full Stack Developer",
+        "institution": "Ezygroup Innovation Co., Ltd.",
+        "description": "Lead and develop the EzyGas smart LPG delivery platform, designed to help small and medium-sized gas businesses manage and operate more easily and efficiently. Utilizes technologies including React, Next.js, Django, PostgreSQL, Docker, and AWS EC2. Also contribute to other projects within the company.",
+        "references": ["https://ezygas.co"]
+      }
+    ],
+    "labassistant": [
+      {
+        "date": "2013 - 2018",
+        "title": "Computer Programming I",
+        "subtitle": "C",
+        "description": "Assisted students with basic programming concepts in C language and provided hands-on support during lab sessions."
+      },
+      {
+        "date": "2016",
+        "title": "Computer Programming II",
+        "subtitle": "Java",
+        "description": "Supported Java programming exercises, helped troubleshoot coding issues, and clarified core object-oriented programming principles."
+      },
+      {
+        "date": "2016",
+        "title": "Computer for Science and Engineering",
+        "subtitle": "Matlab",
+        "description": "Provided guidance and troubleshooting support to students struggling with Matlab for scientific computations."
+      },
+      {
+        "date": "2017",
+        "title": "Data Structures",
+        "subtitle": "Java",
+        "description": "Helped students understand and implement fundamental data structures in Java during lab practice sessions."
+      },
+      {
+        "date": "2018",
+        "title": "Database Systems",
+        "subtitle": "MySQL",
+        "description": "Provided support in SQL querying and database design concepts, assisting students in hands-on database management tasks."
+      },
+      {
+        "date": "2018",
+        "title": "Object-Oriented Software Development",
+        "subtitle": "Java",
+        "description": "Assisted students with object-oriented design patterns and Java application development through lab exercises."
+      }
+    ],
+    "languages": {
+      "levels": ["beginner", "elementary", "intermediate", "expert", "native"],
+      "skills": [
+        {
+          "title": "Thai",
+          "level": 4
+        },
+        {
+          "title": "English",
+          "level": 3
+        },
+        {
+          "title": "Chinese",
+          "level": 0
+        },
+        {
+          "title": "Japanese",
+          "level": 1
+        }
+      ]
+    },
+    "skills": [
+      { "title": "html", "years": 7 },
+      { "title": "css", "years": 7 },
+      { "title": "react", "years": 7 },
+      { "title": "nextjs", "years": 5 },
+      { "title": "django", "years": 5 },
+      { "title": "tailwindcss", "years": 3 },
+      { "title": "typescript", "years": 6 },
+      { "title": "python3", "years": 3 },
+      { "title": "MSSQL", "years": 1 },
+      { "title": "postgresql", "years": 5 },
+      { "title": "Laravel", "years": 1 },
+      { "title": "Bun", "years": 1 },
+      { "title": "Nodejs", "years": 2 },
+      { "title": "AWS EC2", "years": 5 },
+      { "title": "Docker", "years": 5 },
+      { "title": "GatsbyJS", "years": 1 }
+    ],
+    "nonDevSkillsAndInterests": {
+      "music": [
+        "🎸 Electric guitar",
+        "🎵 Guitar",
+        "🎶 Bass",
+        "🥁 Drums",
+        "🎤 Singing",
+        "🎹 Piano",
+        "🎼 Clarinet",
+        "🎷 Saxophone",
+        "🎧 Music arranging"
+      ],
+      "academic": [
+        "🧠 Philosophy",
+        "📐 Mathematics",
+        "🩺 Physiology",
+        "🔬 Science",
+        "🗾 Japanese language",
+        "📚 History"
+      ],
+      "hobbies": ["✈️ Traveling", "📈 Investing", "🎮 Gaming"],
+      "homeAndPets": ["🏡 Home decorating", "🐾 Taking care of pets"]
+    },
+    "pets": [
+      "🐺 Silver the Husky Boi",
+      "🐠 Carps & Ranchus the Hungry Gang",
+      "🐹 Robo Hamsters Twin Speedsters",
+      "🐶 Croissant the Loud Pom",
+      "🐱 Sandy the Alpha Thug",
+      "🐱 Nemo the Foldy Fave",
+      "🐱 Elza the Batman face",
+      "🐱 Selene the Grumpy Fold",
+      "🐱 Chalarm the Badass Thug",
+      "🐈 Jorn the Wild Spark",
+      "🐺 Titan the Lost Rebel",
+      "❄️ Winter the Quiet Ghost",
+      "🐕 Chester the Sneaky Charmer"
+    ]
   }
 }

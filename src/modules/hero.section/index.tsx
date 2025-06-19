@@ -3,12 +3,15 @@
 import { type FC } from "react";
 
 import ArrowDownIcon from "@/assets/scrolldown.svg";
+import Section from "@/components/molecules/section";
 import Socials from "@/components/molecules/socials";
 import { Avatar, AvatarImage } from "@/components/ui/avatar";
 import { Text } from "@/components/ui/text";
+import { fadeIn } from "@/config/animations";
 import { bun, django, flutter, nextjs, nodejs, react, synapes, typescript } from "@/config/links";
 import { slideToSection } from "@/utils/utils";
 import { useBreakpoint } from "@cantabile/hooks";
+import { motion } from "motion/react";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 
@@ -23,8 +26,19 @@ const HeroSection: FC = () => {
 
   const isMobile = useBreakpoint(768);
   return (
-    <section className="hero-section flex min-h-[calc(100vh_-_80px)] shrink flex-col items-center justify-around py-5">
-      <div className="@container flex w-full flex-col items-center p-5 md:max-w-[min(80%,_850px)] portrait:gap-14 landscape:gap-10">
+    <motion.div initial="hidden" variants={fadeIn} whileInView="visible" viewport={{ once: true }}>
+      <Section
+        name="hero"
+        mainContainerClass="items-center md:max-w-[min(80%,_850px)] portrait:gap-14 landscape:gap-10"
+        afterMainContainer={
+          <Image
+            src={ArrowDownIcon}
+            alt="down"
+            className="my-5 cursor-pointer"
+            onClick={handleGoDown}
+          />
+        }
+      >
         <Avatar className="border-blue-medium h-[200px] w-[200px] shrink border-8 border-solid shadow-xl">
           <AvatarImage src="/images/me.jpg" alt="Wallop Opasakhun" />
         </Avatar>
@@ -50,14 +64,8 @@ const HeroSection: FC = () => {
         </Text>
 
         <Socials size={isMobile ? 25 : 40} />
-      </div>
-      <Image
-        src={ArrowDownIcon}
-        alt="down"
-        className="my-5 cursor-pointer"
-        onClick={handleGoDown}
-      />
-    </section>
+      </Section>
+    </motion.div>
   );
 };
 

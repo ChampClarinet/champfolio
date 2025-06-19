@@ -40,7 +40,7 @@ const Appbar: FC = () => {
   const items = [
     { label: "home", onClick: goToTop },
     { label: "about", onClick: () => slideToSection("about") },
-    { label: "portfolio", onClick: () => slideToSection("portfolio") },
+    { label: "resume", onClick: () => slideToSection("resume") },
     { label: "contact", onClick: () => slideToSection("contact") },
   ];
 
