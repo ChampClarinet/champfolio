@@ -17,10 +17,14 @@ const NonDevSkills: FC = () => {
         {t("titles.nondevskills")}
       </Text>
 
-      <Tabs defaultValue="music">
+      <Tabs defaultValue="music" className="gap-4">
         <TabsList>
           {tabs.map((tab) => (
-            <TabsTrigger key={tab} value={tab} className="p-1 text-xs capitalize">
+            <TabsTrigger
+              key={tab}
+              value={tab}
+              className="p-1 text-xs capitalize sm:text-sm md:text-base"
+            >
               {t(`titles.${tab}`)}
             </TabsTrigger>
           ))}

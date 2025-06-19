@@ -27,10 +27,14 @@ const Languages: FC = () => {
               <TooltipTrigger className="w-fit">
                 <div className="flex w-fit items-center gap-1">
                   {[...new Array(level + 1)].map((_, i) => (
-                    <Star key={i} className="text-yellow-300" />
+                    <Star key={i} className="text-yellow-500 dark:text-yellow-300" />
                   ))}
 
-                  <Text variant="small" className="text-blue-gray capitalize">
+                  <Text
+                    variant="small"
+                    intensity="faded"
+                    className="dark:text-blue-gray capitalize"
+                  >
                     {`(${levels[level]})`}
                   </Text>
                 </div>
