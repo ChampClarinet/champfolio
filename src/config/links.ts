@@ -11,4 +11,4 @@ export const flutter = "https://flutter.dev";
 export const django = "https://www.djangoproject.com";
 export const nodejs = "https://nodejs.org";
 export const cv =
-  "https://drive.google.com/file/d/1IInJALTCTRXBS1vQSK8gxPzQKZThkjXF/view?usp=drive_link";
+  "https://drive.google.com/file/d/1aVrUJXRE8PxEAJBt0H9GsbGzylbXyVbq/view?usp=sharing";
