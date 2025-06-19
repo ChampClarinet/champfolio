@@ -2,8 +2,9 @@
 
 import { type FC } from "react";
 
-import { Badge } from "@/components/ui/badge";
 import { useScopedTranslations } from "@/hooks/use-scope-translation";
+
+import Badge from "../badge";
 
 export interface ListProps {
   valueKey: string;
