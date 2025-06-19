@@ -6,6 +6,7 @@ import { Text } from "@/components/ui/text";
 import { Tooltip, TooltipContent, TooltipTrigger } from "@/components/ui/tooltip";
 import { useScopedTranslations } from "@/hooks/use-scope-translation";
 import { Star } from "lucide-react";
+import { motion } from "motion/react";
 import { useTranslations } from "next-intl";
 
 const Languages: FC = () => {
@@ -27,7 +28,16 @@ const Languages: FC = () => {
               <TooltipTrigger className="w-fit">
                 <div className="flex w-fit items-center gap-1">
                   {[...new Array(level + 1)].map((_, i) => (
-                    <Star key={i} className="text-yellow-500 dark:text-yellow-300" />
+                    <motion.div
+                      key={i}
+                      initial={{ opacity: 0, y: -6 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      viewport={{ once: true }}
+                      // transition={{ delay: i * 0.08, duration: 0.2 }}
+                      transition={{ delay: i * 0.1, type: "spring", stiffness: 100 }}
+                    >
+                      <Star className="text-yellow-500 dark:text-yellow-300" />
+                    </motion.div>
                   ))}
 
                   <Text

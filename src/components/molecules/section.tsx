@@ -23,7 +23,7 @@ const Section: FC<PropsWithChildren<SectionProps>> = ({
     >
       <div
         className={cn(
-          "xl @container flex w-full max-w-[1440px] flex-col gap-5 p-5 md:px-20",
+          "@container flex w-full max-w-[1440px] flex-col gap-5 p-5 md:px-20",
           mainContainerClass,
         )}
       >

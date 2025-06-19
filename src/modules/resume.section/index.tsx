@@ -4,7 +4,8 @@ import { type FC } from "react";
 
 import Section from "@/components/molecules/section";
 import { Text } from "@/components/ui/text";
-import { type Variants, motion } from "motion/react";
+import { fadeIn } from "@/config/animations";
+import { motion } from "motion/react";
 
 import Education from "./components/education";
 import Labs from "./components/labs";
@@ -13,11 +14,6 @@ import NonDevSkills from "./components/non-dev";
 import Pets from "./components/pets";
 import Skills from "./components/skills";
 import Works from "./components/works";
-
-const fadeIn: Variants = {
-  hidden: { opacity: 0, y: 16 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: "easeOut" } },
-};
 
 const ResumeSection: FC = () => {
   return (
@@ -39,19 +35,37 @@ const ResumeSection: FC = () => {
         </motion.div>
 
         {/* 🧑‍🎓 Education */}
-        <div className="max-w-[500px]">
+        <motion.div
+          variants={fadeIn}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          className="max-w-[500px]"
+        >
           <Education />
-        </div>
+        </motion.div>
 
         {/* 🧪 Labs */}
-        <div className="max-w-[500px]">
+        <motion.div
+          variants={fadeIn}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          className="max-w-[500px]"
+        >
           <Labs />
-        </div>
+        </motion.div>
 
         {/* 💻 Skills */}
-        <div className="w-full">
+        <motion.div
+          variants={fadeIn}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          className="w-full"
+        >
           <Skills />
-        </div>
+        </motion.div>
 
         {/* 🌐 Languages */}
         <div className="max-w-[300px]">
@@ -59,14 +73,26 @@ const ResumeSection: FC = () => {
         </div>
 
         {/* 🎨 NonDevSkills */}
-        <div className="max-w-[300px] @3xl:col-span-2">
+        <motion.div
+          variants={fadeIn}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          className="max-w-[300px] @3xl:col-span-2"
+        >
           <NonDevSkills />
-        </div>
+        </motion.div>
 
         {/* 🐾 Pets */}
-        <div className="w-full @3xl:col-span-2 @5xl:col-span-3">
+        <motion.div
+          variants={fadeIn}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          className="w-full @3xl:col-span-2 @5xl:col-span-3"
+        >
           <Pets />
-        </div>
+        </motion.div>
       </div>
     </Section>
   );

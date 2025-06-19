@@ -4,6 +4,7 @@ import { type FC } from "react";
 
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Text } from "@/components/ui/text";
+import { motion } from "motion/react";
 import { useTranslations } from "next-intl";
 
 import List from "./list";
@@ -31,7 +32,13 @@ const NonDevSkills: FC = () => {
         </TabsList>
         {tabs.map((t) => (
           <TabsContent value={t} key={t}>
-            <List valueKey={t} />
+            <motion.div
+              variants={{ hidden: { opacity: 0 }, visible: { opacity: 1 } }}
+              initial="hidden"
+              whileInView="visible"
+            >
+              <List valueKey={t} />
+            </motion.div>
           </TabsContent>
         ))}
       </Tabs>

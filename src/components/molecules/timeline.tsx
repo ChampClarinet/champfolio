@@ -39,11 +39,11 @@ const Timeline: FC<TimelineProps> = ({ items, heading }) => {
             </div>
 
             <div className="flex max-w-[400px] flex-col justify-between gap-2">
-              <Text className="font-semibold dark:text-white">{title}</Text>
+              <Text className="font-semibold @3xl:text-lg dark:text-white">{title}</Text>
               <div className="flex flex-col gap-1">
                 {description.map((s, i) => (
                   <div
-                    className="*:text-foreground/70 dark:*:text-blue-gray *:text-xs"
+                    className="*:text-foreground/70 dark:*:text-blue-gray *:text-xs @3xl:*:text-sm"
                     key={i}
                     dangerouslySetInnerHTML={{ __html: marked(s) }}
                   />
@@ -54,7 +54,7 @@ const Timeline: FC<TimelineProps> = ({ items, heading }) => {
                   <Text
                     variant="small"
                     intensity="faded"
-                    className="dark:text-blue-gray font-semibold"
+                    className="dark:text-blue-gray font-semibold @3xl:text-sm"
                   >
                     References:
                   </Text>
@@ -63,7 +63,7 @@ const Timeline: FC<TimelineProps> = ({ items, heading }) => {
                       <a
                         href={r}
                         target="_blank"
-                        className="text-foreground/70 dark:text-blue-gray text-xs underline"
+                        className="text-foreground/70 dark:text-blue-gray text-xs underline @3xl:text-sm"
                         key={i}
                       >
                         {r}
