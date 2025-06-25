@@ -6,6 +6,7 @@ import Section from "@/components/molecules/section";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Text } from "@/components/ui/text";
+import { Tooltip, TooltipContent, TooltipTrigger } from "@/components/ui/tooltip";
 import { fadeIn } from "@/config/animations";
 import { uniqueArray } from "@/utils/utils";
 import { motion } from "motion/react";
@@ -62,31 +63,37 @@ const PortfolioSection: FC = () => {
         <div className="grid grid-cols-1 gap-4 @xl:grid-cols-2 @xl:gap-6 @5xl:grid-cols-3 @5xl:gap-8">
           {filteredProjects.map(({ projectKey, link, img }) => {
             return (
-              <Card
-                className="m-auto max-w-[300px] cursor-pointer overflow-hidden border-transparent p-0"
-                key={projectKey}
-                onClick={() => {
-                  window.open(link, "_blank");
-                }}
-              >
-                <Image
-                  src={`/images/${img}`}
-                  alt={projectKey}
-                  width={300}
-                  height={200}
-                  className="object-contain"
-                />
-                <CardContent className="flex flex-col gap-1 pb-6">
-                  <Text variant="subtitle">{t(`${projectKey}.name`)}</Text>
-                  <Text
-                    intensity="faded"
-                    variant="small"
-                    className="dark:text-blue-light/80 line-clamp-3"
+              <Tooltip key={projectKey}>
+                <TooltipTrigger>
+                  <Card
+                    className="m-auto max-w-[300px] cursor-pointer overflow-hidden border-transparent p-0"
+                    onClick={() => {
+                      window.open(link, "_blank");
+                    }}
                   >
-                    {t(`${projectKey}.description`)}
-                  </Text>
-                </CardContent>
-              </Card>
+                    <Image
+                      src={`/images/${img}`}
+                      alt={projectKey}
+                      width={300}
+                      height={200}
+                      className="object-contain"
+                    />
+                    <CardContent className="flex flex-col items-start gap-1 pb-6">
+                      <Text variant="subtitle">{t(`${projectKey}.name`)}</Text>
+                      <Text
+                        intensity="faded"
+                        variant="small"
+                        className="dark:text-blue-light/80 line-clamp-3 text-left"
+                      >
+                        {t(`${projectKey}.description`)}
+                      </Text>
+                    </CardContent>
+                  </Card>
+                </TooltipTrigger>
+                <TooltipContent className="max-w-[200px]">
+                  {t(`${projectKey}.description`)}
+                </TooltipContent>
+              </Tooltip>
             );
           })}
         </div>
