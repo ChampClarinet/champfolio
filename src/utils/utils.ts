@@ -12,3 +12,7 @@ export const slideToSection = (sectionId: string) => {
     elem.scrollIntoView({ behavior: "smooth", block: "start" });
   }
 };
+
+export const uniqueArray = <T>(arr: T[]): T[] => {
+  return Array.from(new Set(arr));
+};
