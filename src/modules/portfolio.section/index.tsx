@@ -59,11 +59,11 @@ const PortfolioSection: FC = () => {
           )}
         </div>
 
-        <div className="grid cursor-pointer grid-cols-1 gap-4 @xl:grid-cols-2 @xl:gap-6 @5xl:grid-cols-3 @5xl:gap-8">
+        <div className="grid grid-cols-1 gap-4 @xl:grid-cols-2 @xl:gap-6 @5xl:grid-cols-3 @5xl:gap-8">
           {filteredProjects.map(({ projectKey, link, img }) => {
             return (
               <Card
-                className="m-auto max-w-[300px] overflow-hidden border-transparent p-0"
+                className="m-auto max-w-[300px] cursor-pointer overflow-hidden border-transparent p-0"
                 key={projectKey}
                 onClick={() => {
                   window.open(link, "_blank");
