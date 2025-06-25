@@ -1,0 +1,188 @@
+{
+  "General": {
+    "greeting": "こんにちは、勝です。\n「音楽は人類共通の言語である。」 — ヘンリー・ワズワース・ロングフェロー",
+    "name": "麥勝"
+  },
+  "Hero": {
+    "hello": "こんにちは、<u>麥勝</u>、フロントエンド開発者です",
+    "introduce": "こんにちは、まさると申します — <synapes>Synapes</synapes> のフロントエンドWebデベロッパーであり、Ezygroup Innovation の CTO です。<react>React</react> (<nextjs>Next.js</nextjs>）、<ts>TypeScript</ts>、<bun>Bun</bun>、<flutter>Flutter</flutter> をメインに使用してフロントエンド開発を行っています。バックエンドも <django>Django</django> や <node>Node.js</node> を少し扱うことができ、Docker や GitHub CI/CD の環境構築も経験があります。クリーンで保守性の高いコードを心がけており、あらゆるプラットフォームでシームレスなユーザー体験を提供することを目指しています。そして、常に新しい知識と経験を求めることが大好きです 🎸🌱"
+  },
+  "About": {
+    "header": "クリーンで拡張可能な\nアプリとシステムを構築",
+    "about": "Next.js と Flutter に特化したウェブ開発者で、デザインに基づく UI の開発と組み立てを行い、ウェブとモバイルアプリの両方で高速かつレスポンシブなパフォーマンスを提供します。Docker を用いたコンテナ管理およびプロダクショングレードのアプリ開発経験があり、フロントエンド、バックエンド、DevOps システムに関する包括的な理解を持ち、安定的でメンテナンスしやすく効率的なソフトウェアを提供します。",
+    "downloadcv": "CV ダウンロード",
+    "meta": [
+      { "key": "名前", "value": "麥勝" },
+      { "key": "年齢", "value": "31 歳" },
+      { "key": "国籍", "value": "タイ" },
+      { "key": "電話番号", "value": "+66819543213" },
+      { "key": "言語", "value": "タイ語, 英語" },
+      { "key": "フリーランス", "value": "対応可能" }
+    ]
+  },
+  "Resume": {
+    "titles": {
+      "education": "学歴",
+      "works": "職務経歴",
+      "labassistant": "TA・実験補助経験",
+      "competitions": "コンテスト経験",
+      "language": "言語スキル",
+      "skills": "開発スキル",
+      "nondevskills": "その他スキル・関心",
+      "music": "音楽",
+      "academic": "学術・知識",
+      "hobbies": "趣味",
+      "homeAndPets": "生活・ペット",
+      "pets": "ペット"
+    },
+    "education": [
+      {
+        "title": "小学校〜高校",
+        "major": "数学・理科コース",
+        "institution": "バンコク・クリスチャン・カレッジ",
+        "date": "2000 - 2012"
+      },
+      {
+        "title": "理学士 情報技術専攻",
+        "major": "情報技術",
+        "institution": "シラパコーン大学 理学部",
+        "date": "2012 - 2018"
+      }
+    ],
+    "works": [
+      {
+        "date": "2022年5月 - 現在",
+        "title": "フロントエンド開発者（フルタイム）",
+        "institution": "Synapes (Thailand)株式会社",
+        "description": "Next.jsでのウェブインターフェース開発およびFlutterを用いたAndroidアプリ開発を担当。Selen AIなどのAI製品や外部クライアントのプロジェクトに携わり、GitHub ActionsとDockerによるCI/CDの管理も行う。",
+        "references": ["https://synapes.ai", "https://selen.ai", "https://senergythailand.com"]
+      },
+      {
+        "date": "2021年8月 - 2022年4月",
+        "title": "フロントエンド開発者（フリーランス）",
+        "institution": "SIMPLI Finance Lab",
+        "description": "DeFi投資ツールのウェブサイトをモダンな技術で開発。SIMPLIはタイのフィンテックスタートアップで、Binance Smart Chain上のリターン・ボラティリティ・リスクをAIで分析し、効果的なポートフォリオ管理を支援。2021年SCB10X DeFi Launchpadハッカソンで準優勝。"
+      },
+      {
+        "date": "2021年10月 - 2022年3月",
+        "title": "フルスタック開発者（契約）",
+        "institution": "SCGタイランド",
+        "description": "企業内部のバックエンドシステム開発を担当。"
+      },
+      {
+        "date": "2020年7月 - 2020年10月",
+        "title": "システムアナリスト & Laravel開発者",
+        "institution": "シラパコーン大学 研究・イノベーション管理局",
+        "description": "Laravelを用いた会議室・設備予約システムの設計・開発を担当。"
+      },
+      {
+        "date": "2018年8月 - 現在",
+        "title": "CTO兼フルスタック開発者",
+        "institution": "Ezygroup Innovation株式会社",
+        "description": "中小のガス販売店向け管理を容易にするスマートガス配送プラットフォーム「EzyGas」の開発・運用を担当。React、Next.js、Django、PostgreSQL、Docker、AWS EC2などの技術を使用し、社内の他プロジェクトにも関与。",
+        "references": ["https://ezygas.co"]
+      }
+    ],
+    "labassistant": [
+      {
+        "date": "2013 - 2018",
+        "title": "コンピュータプログラミングI アシスタント",
+        "subtitle": "C言語",
+        "description": "C言語の基本的なプログラミングを教え、実験室でのサポートを行う。"
+      },
+      {
+        "date": "2016",
+        "title": "コンピュータプログラミングII アシスタント",
+        "subtitle": "Java言語",
+        "description": "Javaプログラミングの演習支援、コードの問題解決、オブジェクト指向プログラミングの解説。"
+      },
+      {
+        "date": "2016",
+        "title": "科学・工学向け計算アシスタント",
+        "subtitle": "Matlab",
+        "description": "Matlabを用いた科学計算の使用時に学生が直面する問題の支援。"
+      },
+      {
+        "date": "2017",
+        "title": "データ構造 アシスタント",
+        "subtitle": "Java言語",
+        "description": "Javaにおける基本的なデータ構造の理解と活用を支援。"
+      },
+      {
+        "date": "2018",
+        "title": "データベースシステム アシスタント",
+        "subtitle": "MySQL",
+        "description": "SQLクエリ作成とデータベース設計のサポート。"
+      },
+      {
+        "date": "2018",
+        "title": "オブジェクト指向ソフトウェア開発 アシスタント",
+        "subtitle": "Java言語",
+        "description": "オブジェクト指向設計とJavaアプリケーション開発の指導。"
+      }
+    ],
+    "languages": {
+      "levels": ["初級", "基礎", "中級", "上級", "ネイティブ"],
+      "skills": [
+        { "title": "タイ語", "level": 4 },
+        { "title": "英語", "level": 3 },
+        { "title": "中国語", "level": 0 },
+        { "title": "日本語", "level": 1 }
+      ]
+    },
+    "nonDevSkillsAndInterests": {
+      "music": [
+        "🎸 エレキギター",
+        "🎵 ギター",
+        "🎶 ベース",
+        "🥁 ドラム",
+        "🎤 歌唱",
+        "🎹 ピアノ",
+        "🎼 クラリネット",
+        "🎷 サックス",
+        "🎧 音楽アレンジ"
+      ],
+      "academic": ["🧠 哲学", "📐 数学", "🩺 生理学", "🔬 科学", "🗾 英語", "📚 歴史"],
+      "hobbies": ["✈️ 旅行", "📈 投資", "🎮 ゲーム"],
+      "homeAndPets": ["🏡 インテリア", "🐾 ペットケア"]
+    },
+    "pets": [
+      "🐺 Silver the Husky Boi",
+      "🐠 Carps & Ranchus the Hungry Gang",
+      "🐹 Robo Hamsters Twin Speedsters",
+      "🐶 Croissant the Loud Pom",
+      "🐱 Sandy the Alpha Thug",
+      "🐱 Nemo the Foldy Fave",
+      "🐱 Elza the Silent Stare",
+      "🐱 Selene the Grumpy Fold",
+      "🐱 Chalarm the Badass Thug",
+      "🐈 Jorn the Wild Spark",
+      "🐺 Titan the Lost Rebel",
+      "❄️ Winter the Quiet Ghost",
+      "🐕 Chester the Sneaky Charmer"
+    ]
+  },
+  "Projects": {
+    "subtitle": "私の作品の一部をご紹介します",
+    "ezygas": {
+      "name": "Ezygas",
+      "description": "在庫管理、注文処理、顧客データストレージ、自動レポートなどの機能を使用して運用を合理化するガソリンスタンド企業向けのWebベースの管理システム。"
+    },
+    "sol7": {
+      "name": "SOL7",
+      "description": "組織向けに安全でカスタマイズ可能なAIソリューションを提供するAIプラットフォーム。これは、企業固有のデータやワークフローとの統合に焦点を当て、暗号化とアクセスコントロールを通じて厳密なデータプライバシーを維持し、専用の専門家のサポートとメンテナンスに裏付けられています。"
+    },
+    "selen": {
+      "name": "SELEN",
+      "description": "AIを使用してCCTV映像を分析して、盗難、暴力、侵入、火災、その他のセキュリティインシデントを検出するためのCCTV映像を分析するシナポンによるビデオ分析プラットフォーム。"
+    },
+    "synapes": {
+      "name": "Synapes",
+      "description": "Synapes（Thailand）Co.、Ltd.のコーポレートランディングページ、AI駆動型の画像分析を活用してセキュリティソリューションを強化します。"
+    },
+    "senergy": {
+      "name": "Senergy",
+      "description": "クリーンエネルギー会社のウェブサイトは、その持続可能なサービスとミッションを強調しています。"
+    }
+  }
+}

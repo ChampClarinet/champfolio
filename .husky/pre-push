@@ -1,23 +1,27 @@
 #!/bin/sh
-. "$(dirname "$0")/_/husky.sh"
-
-echo "🔍 Checking version before pushing to main..."
 
 branch=$(git rev-parse --abbrev-ref HEAD)
 
-if [ "$branch" != "main" ]; then
-  echo "🌿 Not pushing to main, skipping version check."
-  exit 0
+# ✅ Enforce lint before pushing protected branches
+if echo "$branch" | grep -Eq '^(main|develop|release/.*|hotfix/.*)$'; then
+  echo "🔍 Running bun lint before pushing to $branch..."
+  if ! bun lint; then
+    echo "❌ Lint failed. Push blocked."
+    exit 1
+  fi
 fi
 
-# ดึง version จาก main บน remote
-main_version=$(git show origin/main:package.json | grep '"version"' | head -1 | sed -E 's/.*"version": *"(.*)".*/\1/')
-# ดึง version ปัจจุบันใน local
-current_version=$(grep '"version"' package.json | head -1 | sed -E 's/.*"version": *"(.*)".*/\1/')
+# ✅ Version check before pushing to main
+if [ "$branch" = "main" ]; then
+  echo "🔍 Checking version before pushing to main..."
 
-if [ "$main_version" = "$current_version" ]; then
-  echo "❌ package.json version is still $current_version — must bump before pushing to main!"
-  exit 1
+  main_version=$(git show origin/main:package.json | grep '"version"' | head -1 | sed -E 's/.*"version": *"(.*)".*/\1/')
+  current_version=$(grep '"version"' package.json | head -1 | sed -E 's/.*"version": *"(.*)".*/\1/')
+
+  if [ "$main_version" = "$current_version" ]; then
+    echo "❌ package.json version is still $current_version — must bump before pushing to main!"
+    exit 1
+  fi
+
+  echo "✅ Version updated: $main_version → $current_version"
 fi
-
-echo "✅ Version updated: $main_version → $current_version"
