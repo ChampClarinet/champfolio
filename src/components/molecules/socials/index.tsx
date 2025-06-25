@@ -4,6 +4,7 @@ import { type FC } from "react";
 
 import FacebookIcon from "./facebook.icon";
 import GithubIcon from "./github.icon";
+import LineIcon from "./line.icon";
 import LinkedInIcon from "./linkedin.icon";
 import MailIcon from "./mail.icon";
 
@@ -17,6 +18,7 @@ const Socials: FC<SocialsProps> = ({ size = 40 }) => {
       <LinkedInIcon size={size} />
       <GithubIcon size={size} />
       <MailIcon size={size} />
+      <LineIcon size={size} />
     </div>
   );
 };
