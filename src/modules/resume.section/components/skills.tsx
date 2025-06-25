@@ -17,6 +17,10 @@ const Skills: FC = () => {
         {t("titles.skills")}
       </Text>
 
+      <Text variant="small" intensity="faded" className="dark:text-foreground/80">
+        {t("titles.skills-desc")}
+      </Text>
+
       <div className="flex w-full flex-wrap gap-2">
         {skills.map(({ title, years }, i) => (
           <Tooltip key={i}>
