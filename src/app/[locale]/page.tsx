@@ -3,6 +3,7 @@ import { Suspense, lazy } from "react";
 const HeroSection = lazy(() => import("@/modules/hero.section"));
 const AboutSection = lazy(() => import("@/modules/about.section"));
 const ResumeSection = lazy(() => import("@/modules/resume.section"));
+const PortfolioSection = lazy(() => import("@/modules/portfolio.section"));
 
 const HomePage = () => {
   return (
@@ -10,6 +11,7 @@ const HomePage = () => {
       <HeroSection />
       <AboutSection />
       <ResumeSection />
+      <PortfolioSection />
     </Suspense>
   );
 };
