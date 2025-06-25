@@ -1,0 +1,14 @@
+export const facebook = "https://fb.com/champclarinetmaster";
+export const linkedin = "https://www.linkedin.com/in/wallop-o-pasakhun";
+export const github = "https://github.com/champclarinet";
+export const email = "mailto:champbassist159@gmail.com";
+export const react = "https://react.dev";
+export const synapes = "https://synapes.ai";
+export const nextjs = "https://nextjs.org";
+export const typescript = "https://typescriptlang.org";
+export const bun = "https://bun.sh";
+export const flutter = "https://flutter.dev";
+export const django = "https://www.djangoproject.com";
+export const nodejs = "https://nodejs.org";
+export const cv =
+  "https://drive.google.com/file/d/1aVrUJXRE8PxEAJBt0H9GsbGzylbXyVbq/view?usp=sharing";

@@ -3,7 +3,7 @@
 import { RedirectType, redirect } from "next/navigation";
 
 const NotFoundPage = async () => {
-  redirect("/", RedirectType.replace);
+  redirect("/en", RedirectType.replace);
 };
 
 export default NotFoundPage;

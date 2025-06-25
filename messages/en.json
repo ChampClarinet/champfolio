@@ -1,0 +1,207 @@
+{
+  "General": {
+    "greeting": "Hello, my name is Champ.\n“Music is the universal language of mankind.” — Henry Wadsworth Longfellow",
+    "name": "Wallop Opasakhun"
+  },
+  "Hero": {
+    "hello": "Hello, I'm <u>Wallop Opasakhun</u>, Front-end Developer",
+    "introduce": "Hi, I'm Wallop (“Champ”) — a frontend web developer at <synapes>Synapes</synapes> and CTO at Ezygroup Innovation. I specialize in building scalable, responsive UIs using <react>React</react> (<nextjs>Next.js</nextjs>), <ts>TypeScript</ts>, <bun>Bun</bun> and <flutter>Flutter</flutter>. While I occasionally work on backend systems with <django>Django</django> or <node>Node.js</node>, and handle Dockerization and GitHub CI/CD, my primary focus is crafting clean, maintainable code and delivering seamless user experiences across platforms. I'm passionate about clean and seamless code, and seeking for new experiences. 🎸🌱"
+  },
+  "About": {
+    "header": "Build clean & scalable\napps and systems",
+    "about": "A web developer specialized in Next.js and Flutter for developing and assembling UI based on designs, delivering fast and responsive performance on both web and mobile applications. Experienced in using Docker for containerization and developing production-grade applications, with a comprehensive understanding of frontend, backend, and DevOps systems to deliver stable, maintainable, and efficient software.",
+    "downloadcv": "Download CV",
+    "meta": [
+      { "key": "name", "value": "Wallop Opasakhun" },
+      { "key": "age", "value": "31 Years" },
+      { "key": "nationality", "value": "Thai" },
+      { "key": "phone", "value": "+66819543213" },
+      { "key": "languages", "value": "Thai, English" },
+      { "key": "freelance", "value": "available" }
+    ]
+  },
+  "Resume": {
+    "titles": {
+      "education": "Education",
+      "works": "Work Experience",
+      "labassistant": "Lab Assistant Experience",
+      "competitions": "Competitions Experience",
+      "language": "Languages",
+      "skills": "Skills",
+      "nondevskills": "Non-developing skills",
+      "music": "music",
+      "academic": "academics",
+      "hobbies": "hobbies",
+      "homeAndPets": "home and pets",
+      "pets": "pets"
+    },
+    "education": [
+      {
+        "title": "Primary to High School",
+        "major": "Mathematics - Science Program",
+        "institution": "Bangkok Christian College",
+        "date": "2000 - 2012"
+      },
+      {
+        "title": "Bachelor of Science in Information Technology",
+        "major": "Information Technology",
+        "institution": "Faculty of Science, Silpakorn University",
+        "date": "2012 - 2018"
+      }
+    ],
+    "works": [
+      {
+        "date": "May 2022 - Present",
+        "title": "Frontend Developer (Full-time)",
+        "institution": "Synapes (Thailand) Co., Ltd.",
+        "description": "Developing frontend interfaces with Flutter and Next.js for both in-house AI products like Selen AI and external client projects contracted to the company. Also involved in CI/CD pipelines using GitHub Actions and Docker.",
+        "references": ["https://synapes.ai", "https://selen.ai", "https://senergythailand.com"]
+      },
+      {
+        "date": "August 2021 - April 2022",
+        "title": "Frontend Developer (Freelance)",
+        "institution": "SIMPLI Finance Lab",
+        "description": "Developed frontend components for DeFi investment tools using modern web technologies. SIMPLI is a Thai FinTech startup integrating AI to analyze yield, volatility, and impermanent loss across platforms on Binance Smart Chain, helping users optimize decentralized investment portfolios. The project won 2nd place at the SCB10X DeFi Launchpad Hackathon 2021."
+      },
+      {
+        "date": "October 2021 - March 2022",
+        "title": "Contract Full-stack Developer",
+        "institution": "SCG Thailand",
+        "description": "Built internal back-office web systems for enterprise operations. Worked closely with in-house teams to deliver scalable and maintainable web solutions."
+      },
+      {
+        "date": "July 2020 - October 2020",
+        "title": "System Analyst & Laravel Developer",
+        "institution": "Silpakorn University Research, Innovation and Creativity Administration Office",
+        "description": "Designed and developed a Laravel-based co-working space booking system for Silpakorn University's Research, Innovation and Creativity Administration Office."
+      },
+      {
+        "date": "August 2018 - Present",
+        "title": "CTO & Full Stack Developer",
+        "institution": "Ezygroup Innovation Co., Ltd.",
+        "description": "Lead and develop the EzyGas smart LPG delivery platform, designed to help small and medium-sized gas businesses manage and operate more easily and efficiently. Utilizes technologies including React, Next.js, Django, PostgreSQL, Docker, and AWS EC2. Also contribute to other projects within the company.",
+        "references": ["https://ezygas.co"]
+      }
+    ],
+    "labassistant": [
+      {
+        "date": "2013 - 2018",
+        "title": "Computer Programming I",
+        "subtitle": "C",
+        "description": "Assisted students with basic programming concepts in C language and provided hands-on support during lab sessions."
+      },
+      {
+        "date": "2016",
+        "title": "Computer Programming II",
+        "subtitle": "Java",
+        "description": "Supported Java programming exercises, helped troubleshoot coding issues, and clarified core object-oriented programming principles."
+      },
+      {
+        "date": "2016",
+        "title": "Computer for Science and Engineering",
+        "subtitle": "Matlab",
+        "description": "Provided guidance and troubleshooting support to students struggling with Matlab for scientific computations."
+      },
+      {
+        "date": "2017",
+        "title": "Data Structures",
+        "subtitle": "Java",
+        "description": "Helped students understand and implement fundamental data structures in Java during lab practice sessions."
+      },
+      {
+        "date": "2018",
+        "title": "Database Systems",
+        "subtitle": "MySQL",
+        "description": "Provided support in SQL querying and database design concepts, assisting students in hands-on database management tasks."
+      },
+      {
+        "date": "2018",
+        "title": "Object-Oriented Software Development",
+        "subtitle": "Java",
+        "description": "Assisted students with object-oriented design patterns and Java application development through lab exercises."
+      }
+    ],
+    "languages": {
+      "levels": ["beginner", "elementary", "intermediate", "expert", "native"],
+      "skills": [
+        {
+          "title": "Thai",
+          "level": 4
+        },
+        {
+          "title": "English",
+          "level": 3
+        },
+        {
+          "title": "Chinese",
+          "level": 0
+        },
+        {
+          "title": "Japanese",
+          "level": 1
+        }
+      ]
+    },
+    "nonDevSkillsAndInterests": {
+      "music": [
+        "🎸 Electric guitar",
+        "🎵 Guitar",
+        "🎶 Bass",
+        "🥁 Drums",
+        "🎤 Singing",
+        "🎹 Piano",
+        "🎼 Clarinet",
+        "🎷 Saxophone",
+        "🎧 Music arranging"
+      ],
+      "academic": [
+        "🧠 Philosophy",
+        "📐 Mathematics",
+        "🩺 Physiology",
+        "🔬 Science",
+        "🗾 Japanese language",
+        "📚 History"
+      ],
+      "hobbies": ["✈️ Traveling", "📈 Investing", "🎮 Gaming"],
+      "homeAndPets": ["🏡 Home decorating", "🐾 Taking care of pets"]
+    },
+    "pets": [
+      "🐺 Silver the Husky Boi",
+      "🐠 Carps & Ranchus the Hungry Gang",
+      "🐹 Robo Hamsters Twin Speedsters",
+      "🐶 Croissant the Loud Pom",
+      "🐱 Sandy the Alpha Thug",
+      "🐱 Nemo the Foldy Fave",
+      "🐱 Elza the Batman face",
+      "🐱 Selene the Grumpy Fold",
+      "🐱 Chalarm the Badass Thug",
+      "🐈 Jorn the Wild Spark",
+      "🐺 Titan the Lost Rebel",
+      "❄️ Winter the Quiet Ghost",
+      "🐕 Chester the Sneaky Charmer"
+    ]
+  },
+  "Projects": {
+    "subtitle": "Here's some of my work",
+    "ezygas": {
+      "name": "Ezygas",
+      "description": "web-based management system for gas station businesses that streamlines operations with features like stock management, order processing, customer data storage, and automated reporting to help owners manage their gas stations more efficiently from anywhere with internet access."
+    },
+    "sol7": {
+      "name": "SOL7",
+      "description": "AI platform that provides secure, customizable AI solutions for organizations. It focuses on integrating with company-specific data and workflows while maintaining strict data privacy through encryption and access controls, backed by dedicated expert support and maintenance."
+    },
+    "selen": {
+      "name": "SELEN",
+      "description": "A video analytics platform by Synapes that uses AI to analyze CCTV footage for detecting theft, violence, intrusions, fires, and other security incidents in retail stores, factories, warehouses, and buildings."
+    },
+    "synapes": {
+      "name": "Synapes",
+      "description": "Corporate landing page for Synapes (Thailand) Co., Ltd., leveraging AI-driven image analysis to enhance security solutions."
+    },
+    "senergy": {
+      "name": "Senergy",
+      "description": "A clean energy company's website highlighting its sustainable services and mission."
+    }
+  }
+}
