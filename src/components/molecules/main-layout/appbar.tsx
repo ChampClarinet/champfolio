@@ -14,7 +14,7 @@ import { email } from "@/config/links";
 import { useLanguage } from "@/hooks/use-language";
 import { useMounted } from "@/hooks/use-mounted";
 import { useTheme } from "@/hooks/use-theme";
-import { cn, slideToSection } from "@/utils/utils";
+import { cn, scrollToTop, slideToSection } from "@/utils/utils";
 import { MenuIcon } from "lucide-react";
 
 const Appbar: FC = () => {
@@ -25,23 +25,13 @@ const Appbar: FC = () => {
     window.open(email);
   };
 
-  const goToTop = () => {
-    if (typeof window != "undefined") {
-      const mainEl = document.querySelector("#main > div");
-      if (mainEl) {
-        mainEl.scrollTo({ top: 0, behavior: "smooth" });
-        return;
-      }
-    }
-  };
-
   const mobileMenuClasses = cn("px-4 py-2 text-lg capitalize");
 
   const items = [
-    { label: "home", onClick: goToTop },
+    { label: "home", onClick: scrollToTop },
     { label: "about", onClick: () => slideToSection("about") },
     { label: "resume", onClick: () => slideToSection("resume") },
-    { label: "contact", onClick: () => slideToSection("contact") },
+    { label: "portfolio", onClick: () => slideToSection("portfolio") },
   ];
 
   const mounted = useMounted();
