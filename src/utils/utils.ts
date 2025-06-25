@@ -16,3 +16,14 @@ export const slideToSection = (sectionId: string) => {
 export const uniqueArray = <T>(arr: T[]): T[] => {
   return Array.from(new Set(arr));
 };
+
+export const scrollToTop = () => {
+  if (typeof window == "undefined") return;
+  const mainEl = document.querySelector("#main > div");
+  if (mainEl) {
+    mainEl.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }
+};

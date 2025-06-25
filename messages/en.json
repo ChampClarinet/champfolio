@@ -1,6 +1,7 @@
 {
   "General": {
-    "greeting": "Hello, my name is Champ.\n“Music is the universal language of mankind.” — Henry Wadsworth Longfellow"
+    "greeting": "Hello, my name is Champ.\n“Music is the universal language of mankind.” — Henry Wadsworth Longfellow",
+    "name": "Wallop Opasakhun"
   },
   "Hero": {
     "hello": "Hello, I'm <u>Wallop Opasakhun</u>, Front-end Developer",
