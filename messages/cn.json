@@ -29,6 +29,7 @@
       "competitions": "競賽經驗",
       "language": "語言能力",
       "skills": "開發技能",
+      "skills-desc": "將滑鼠懸停在每項技能上，即可查看您的經驗年數。",
       "nondevskills": "其他技能與興趣",
       "music": "音樂",
       "academic": "學術領域",
