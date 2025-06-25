@@ -28,6 +28,7 @@
       "competitions": "コンテスト経験",
       "language": "言語スキル",
       "skills": "開発スキル",
+      "skills-desc": "各スキルにカーソルを合わせると、経験年数が表示されます。",
       "nondevskills": "その他スキル・関心",
       "music": "音楽",
       "academic": "学術・知識",
