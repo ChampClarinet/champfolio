@@ -2,6 +2,7 @@ export const projects = [
   {
     projectKey: "ezygas",
     link: "https://ezygas.co",
+    img: "ezygas.png",
     tags: [
       "nextjs",
       "typescript",
@@ -15,12 +16,14 @@ export const projects = [
   },
   {
     projectKey: "sol7",
+    img: "sol7.png",
     link: "https://sol7.ai",
     tags: ["nextjs", "typescript", "tailwindcss", "docker", "docker compose"],
   },
   {
     projectKey: "selen",
     link: "https://selen.ai",
+    img: "selen.png",
     tags: [
       "nextjs",
       "typescript",
@@ -34,12 +37,14 @@ export const projects = [
   },
   {
     projectKey: "synapes",
+    img: "synapes.png",
     link: "https://synapes.ai",
     tags: ["nextjs", "typescript", "tailwindcss", "docker", "docker compose", "strapi"],
   },
   {
     projectKey: "senergy",
-    link: "https://synapes.ai",
+    img: "senergy.png",
+    link: "https://senergythailand.com",
     tags: ["gatsbyjs", "typescript", "tailwindcss", "docker", "docker compose"],
   },
 ];
