@@ -161,5 +161,28 @@
       "❄️ Winter the Quiet Ghost",
       "🐕 Chester the Sneaky Charmer"
     ]
+  },
+  "Projects": {
+    "subtitle": "以下是我的一些作品",
+    "ezygas": {
+      "name": "Ezygas",
+      "description": "基於Web的加油站業務管理系統，這些系統可以簡化庫存管理，訂單處理，客戶數據存儲和自動報告等功能，以幫助業主從互聯網訪問中更有效地管理其加油站。"
+    },
+    "sol7": {
+      "name": "SOL7",
+      "description": "為組織提供安全，可自定義的AI解決方案的AI平台。它重點是與公司特定的數據和工作流程集成，同時通過專門的專家支持和維護來支持通過加密和訪問控制來維持嚴格的數據隱私。"
+    },
+    "selen": {
+      "name": "SELEN",
+      "description": "Synapes 的視頻分析平台，該平台使用AI分析CCTV錄像，以檢測零售店，工廠，倉庫和建築物中的盜竊，暴力，入侵，火災和其他安全事件。"
+    },
+    "synapes": {
+      "name": "Synapes",
+      "description": "Synapes（泰國）有限公司的公司登陸頁面，利用AI驅動的圖像分析來增強安全解決方案。"
+    },
+    "senergy": {
+      "name": "Senergy",
+      "description": "一家清潔能源公司的網站強調了其可持續服務和使命。"
+    }
   }
 }

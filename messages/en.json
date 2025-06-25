@@ -179,5 +179,28 @@
       "❄️ Winter the Quiet Ghost",
       "🐕 Chester the Sneaky Charmer"
     ]
+  },
+  "Projects": {
+    "subtitle": "Here's some of my work",
+    "ezygas": {
+      "name": "Ezygas",
+      "description": "web-based management system for gas station businesses that streamlines operations with features like stock management, order processing, customer data storage, and automated reporting to help owners manage their gas stations more efficiently from anywhere with internet access."
+    },
+    "sol7": {
+      "name": "SOL7",
+      "description": "AI platform that provides secure, customizable AI solutions for organizations. It focuses on integrating with company-specific data and workflows while maintaining strict data privacy through encryption and access controls, backed by dedicated expert support and maintenance."
+    },
+    "selen": {
+      "name": "SELEN",
+      "description": "A video analytics platform by Synapes that uses AI to analyze CCTV footage for detecting theft, violence, intrusions, fires, and other security incidents in retail stores, factories, warehouses, and buildings."
+    },
+    "synapes": {
+      "name": "Synapes",
+      "description": "Corporate landing page for Synapes (Thailand) Co., Ltd., leveraging AI-driven image analysis to enhance security solutions."
+    },
+    "senergy": {
+      "name": "Senergy",
+      "description": "A clean energy company's website highlighting its sustainable services and mission."
+    }
   }
 }
