@@ -1,95 +1,47 @@
-# Selen Frontend
+# 🪪 Champ's Dev Portfolio
 
-### This project is the SELEN for multiple companies
+Hi, I’m Champ — a passionate full-stack developer from Bangkok with 7+ years of experience building user-focused apps, scalable systems, and beautiful interfaces across React, Next.js, Django, and beyond.
 
-## Getting Started
+This is my personal portfolio website where I showcase my professional experience, skills, tech stack, AI projects, and a little sparkle of my life — including my musical journey and adorable pets 🐾.
 
-First, run the development server:
+## 🚀 Tech Stack
+
+- **Frontend:** Next.js, React, TypeScript, Tailwind CSS, ShadCN UI, Framer Motion
+- **Backend:** Django, Django REST Framework, PostgreSQL, Node.js
+- **DevOps:** Docker, Docker Compose, GitHub Actions, AWS EC2
+- **AI-related:** (Experimental/Optional projects with AI integrations)
+
+## 📚 Sections
+
+- 🧑‍💼 **Work Experience**
+- 🧑‍🎓 **Education**
+- 🧪 **Lab Assistant Roles**
+- 💻 **Skills & AI Skills**
+- 🌐 **Languages**
+- 🎨 **Non-dev Interests (Music, Science, Hobbies)**
+- 🐾 **Pets**
+- 🔧 **Projects** — Featuring **EzyGas**, **Selen AI**, **SOL7**, **Synapes**, **Senergy**
+
+## 🌍 Multi-language Support
+
+This site supports **English**, **ภาษาไทย**, **繁體中文**, and **日本語**.  
+Built with accessibility, internationalization, and mobile responsiveness in mind.
+
+## 💖 Special Features
+
+- Animated UI with **Framer Motion**
+- Layout scaling with Tailwind’s **@container queries**
+- Language selector
+- Skill filtering in project showcase
+- Responsive grid layout
+- Personal touch from Champ’s musical & pet life 🎷🐕🎮
+
+## 📦 Installation & Dev
 
 ```bash
+# Install dependencies
+bun install
+
+# Run locally
 bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/index.tsx`. The page auto-updates as you edit the file.
-
-## Production Build
-
-To run the production server:
-
-```bash
-bun run build && bun start
-```
-
-Open http://localhost:3000 in your browser to see the result.
-
-## E2E Information
-
-This project corresponding to following deployment URLs
-
-| Server Type                  | Environment | URL                                   |
-| ---------------------------- | ----------- | ------------------------------------- |
-| Frappe API and Authorization | ALL         | https://voip.synapes-voip-uat-001.net |
-| Deployment Frontend          | UAT         | https://voip.0x0xzuow9jw.xyz          |
-
-### OneSignal
-
-For this project, use this app id
-
-| Environment | ID                                   |
-| ----------- | ------------------------------------ |
-| local       | 9ce8e866-862b-4c82-b35f-bfb9d5401d4c |
-| production  | TBA                                  |
-
-### Client IDs
-
-Each environments require individual Frappe's client id as below.
-
-| Server Type         | ID         |
-| ------------------- | ---------- |
-| local               | 29fcdi13nh |
-| server (UAT)        | 29398fvurv |
-| server (Production) | TBA        |
-
-## Build to docker image
-
-To build to docker, use `docker-build.sh` to build the docker image
-
-```bash
-./docker-build.sh
-```
-
-To determine docker tag, type it as argument
-
-```bash
-./docker-build.sh thedockerversion
-```
-
-**Warning:** Can not use "no-cache" as docker tag name
-
-To build with no cache option, use no-cache option
-
-```bash
-./docker-build.sh no-cache
-```
-
-To both determine docker tag and no-cache option use version as first argument and no-cache as second option
-
-```bash
-./docker-build.sh thedockerversion no-cache
-```
-
-### Docker compose way
-
-If you want to build by docker-compose, use `docker-compose-build.sh` instead to build
-
-```bash
-./docker-compose-build.sh
-```
-
-If you want to pass parameters in `docker-build.sh`, just pass arguments just like use `docker-build.sh`
-
-```bash
-./docker-compose-build.sh thedockerversion no-cache
 ```
