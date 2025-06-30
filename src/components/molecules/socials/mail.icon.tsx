@@ -1,15 +1,14 @@
 import type { FC } from "react";
 
+import Link from "@/components/ui/link";
 import { email } from "@/config/links";
-
-import Base from "./base";
 
 export interface GithubIconProps {
   size?: number;
 }
 const GithubIcon: FC<GithubIconProps> = ({ size = 50 }) => {
   return (
-    <Base name="Mail to Wallop" link={email}>
+    <Link name="Mail to Wallop" link={email}>
       <svg
         width={size}
         height={size}
@@ -45,7 +44,7 @@ const GithubIcon: FC<GithubIconProps> = ({ size = 50 }) => {
           mask="url(#path-3-inside-1_233_272)"
         />
       </svg>
-    </Base>
+    </Link>
   );
 };
 

@@ -14,9 +14,7 @@ const List: FC<ListProps> = ({ valueKey }) => {
   return (
     <div className="flex w-full flex-wrap gap-2">
       {list.map((item) => (
-        <Badge className="bg-blue-medium rounded-md text-white capitalize" key={item}>
-          {item}
-        </Badge>
+        <Badge key={item}>{item}</Badge>
       ))}
     </div>
   );
