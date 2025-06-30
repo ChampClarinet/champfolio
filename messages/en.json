@@ -7,7 +7,8 @@
       "achieved": "Achieved",
       "internal": "Internal"
     },
-    "internal": "This project is confidential and cannot be publicly accessed."
+    "internal": "This project is confidential and cannot be publicly accessed.",
+    "achieved": "This project is no longer accessible and has been frozen by the owner without further development."
   },
   "Hero": {
     "hello": "Hello, I'm <u>Wallop Opasakhun</u>, Front-end Developer",
