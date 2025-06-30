@@ -190,7 +190,7 @@
     ]
   },
   "Projects": {
-    "subtitle": "Here are some of the projects I've worked on. Each project represents different skills and technologies I've mastered.",
+    "subtitle": "Here are some projects I've worked on, each showcasing the skills and technologies I've mastered.",
     "ezygas": {
       "name": "Ezygas",
       "description": "Web-based management system for gas station businesses that streamlines operations with features like stock management, order processing, customer data storage, and automated reporting to help owners manage their gas stations more efficiently from anywhere with internet access."
