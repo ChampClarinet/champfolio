@@ -1,15 +1,14 @@
 import type { FC } from "react";
 
+import Link from "@/components/ui/link";
 import { linkedin } from "@/config/links";
-
-import Base from "./base";
 
 export interface LinkedInIconProps {
   size?: number;
 }
 const LinkedInIcon: FC<LinkedInIconProps> = ({ size = 50 }) => {
   return (
-    <Base name="LinkedIn" link={linkedin}>
+    <Link name="LinkedIn" link={linkedin}>
       <svg
         width={size}
         height={size}
@@ -24,7 +23,7 @@ const LinkedInIcon: FC<LinkedInIconProps> = ({ size = 50 }) => {
           fill="var(--icon-color)"
         />
       </svg>
-    </Base>
+    </Link>
   );
 };
 
