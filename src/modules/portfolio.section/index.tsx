@@ -56,9 +56,9 @@ const PortfolioSection: FC = () => {
                           </Badge>
                         </div>
 
-                        {status == "internal" && (
-                          <Text className="" variant="small">
-                            ⚠️{tG("internal")}
+                        {["internal", "achieved"].includes(status) && (
+                          <Text variant="small" className="text-left">
+                            ⚠️{tG(status)}
                           </Text>
                         )}
 
