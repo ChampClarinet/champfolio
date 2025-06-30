@@ -9,16 +9,7 @@ export interface BadgeProps extends ComponentProps<"span">, VariantProps<typeof 
 }
 const Badge: FC<BadgeProps> = (props) => {
   const clickable = props.onClick != null;
-  return (
-    <ShadCNBadge
-      {...props}
-      className={cn(
-        "bg-blue-medium block max-w-full min-w-0 overflow-hidden rounded-md text-ellipsis whitespace-nowrap text-white capitalize hover:brightness-110",
-        clickable && "cursor-pointer",
-        props.className,
-      )}
-    />
-  );
+  return <ShadCNBadge {...props} className={cn(clickable && "cursor-pointer", props.className)} />;
 };
 
 export default Badge;

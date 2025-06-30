@@ -1,15 +1,14 @@
 import type { FC } from "react";
 
+import Link from "@/components/ui/link";
 import { line } from "@/config/links";
-
-import Base from "./base";
 
 export interface LineIconProps {
   size?: number;
 }
 const LineIcon: FC<LineIconProps> = ({ size = 50 }) => {
   return (
-    <Base name="Add Line" link={line}>
+    <Link name="Add Line" link={line}>
       <svg
         viewBox="0 0 170 170"
         xmlns="http://www.w3.org/2000/svg"
@@ -78,7 +77,7 @@ const LineIcon: FC<LineIconProps> = ({ size = 50 }) => {
           strokeLinecap="round"
         />
       </svg>
-    </Base>
+    </Link>
   );
 };
 
