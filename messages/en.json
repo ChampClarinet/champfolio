@@ -212,7 +212,7 @@
     },
     "suric-connector": {
       "name": "SURIC Connector",
-      "description": "Fullstack booking system for Silpakorn University's research co-working space. Built with Laravel and React during university. Project is no longer maintained."
+      "description": "Booking system for research unit co-working space at Silpakorn University, developed with Laravel and React after graduation (no longer maintained)."
     },
     "scg": {
       "name": "SCG Internal Backoffice",
