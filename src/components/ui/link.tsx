@@ -1,14 +1,15 @@
 import type { FC, PropsWithChildren } from "react";
 
-import Link from "next/link";
+import NextLink from "next/link";
 
 export interface BaseProps {
-  link: string;
-  name: string;
+  link?: string;
+  name?: string;
 }
-const Base: FC<PropsWithChildren<BaseProps>> = ({ children, link, name }) => {
+const Link: FC<PropsWithChildren<BaseProps>> = ({ children, link, name }) => {
+  if (!link) return children;
   return (
-    <Link
+    <NextLink
       href={link}
       target="_blank"
       rel="noopener noreferrer"
@@ -16,8 +17,8 @@ const Base: FC<PropsWithChildren<BaseProps>> = ({ children, link, name }) => {
       className="cursor-pointer"
     >
       {children}
-    </Link>
+    </NextLink>
   );
 };
 
-export default Base;
+export default Link;

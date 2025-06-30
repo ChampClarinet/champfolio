@@ -1,7 +1,13 @@
 {
   "General": {
     "greeting": "Hello, my name is Champ.\n“Music is the universal language of mankind.” — Henry Wadsworth Longfellow",
-    "name": "Wallop Opasakhun"
+    "name": "Wallop Opasakhun",
+    "project-status": {
+      "available": "Available",
+      "achieved": "Achieved",
+      "internal": "Internal"
+    },
+    "internal": "This project is confidential and cannot be publicly accessed."
   },
   "Hero": {
     "hello": "Hello, I'm <u>Wallop Opasakhun</u>, Front-end Developer",
@@ -183,10 +189,10 @@
     ]
   },
   "Projects": {
-    "subtitle": "Here's some of my work",
+    "subtitle": "Here are some of the projects I've worked on. Each project represents different skills and technologies I've mastered.",
     "ezygas": {
       "name": "Ezygas",
-      "description": "web-based management system for gas station businesses that streamlines operations with features like stock management, order processing, customer data storage, and automated reporting to help owners manage their gas stations more efficiently from anywhere with internet access."
+      "description": "Web-based management system for gas station businesses that streamlines operations with features like stock management, order processing, customer data storage, and automated reporting to help owners manage their gas stations more efficiently from anywhere with internet access."
     },
     "sol7": {
       "name": "SOL7",
@@ -203,6 +209,14 @@
     "senergy": {
       "name": "Senergy",
       "description": "A clean energy company's website highlighting its sustainable services and mission."
+    },
+    "suric-connector": {
+      "name": "SURIC Connector",
+      "description": "Booking system for research unit co-working space at Silpakorn University, developed with Laravel and React after graduation (no longer maintained)."
+    },
+    "scg": {
+      "name": "SCG Internal Backoffice",
+      "description": "Full-stack internal platform for enterprise operations, designed and developed for SCG's internal business process management."
     }
   }
 }

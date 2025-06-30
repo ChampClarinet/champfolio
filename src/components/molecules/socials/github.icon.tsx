@@ -1,15 +1,14 @@
 import type { FC } from "react";
 
+import Link from "@/components/ui/link";
 import { github } from "@/config/links";
-
-import Base from "./base";
 
 export interface GithubIconProps {
   size?: number;
 }
 const GithubIcon: FC<GithubIconProps> = ({ size = 50 }) => {
   return (
-    <Base name="Github" link={github}>
+    <Link name="Github" link={github}>
       <svg
         width={size}
         height={size}
@@ -26,7 +25,7 @@ const GithubIcon: FC<GithubIconProps> = ({ size = 50 }) => {
           fill="var(--background)"
         />
       </svg>
-    </Base>
+    </Link>
   );
 };
 
