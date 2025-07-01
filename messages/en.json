@@ -1,7 +1,14 @@
 {
   "General": {
     "greeting": "Hello, my name is Champ.\n“Music is the universal language of mankind.” — Henry Wadsworth Longfellow",
-    "name": "Wallop Opasakhun"
+    "name": "Wallop Opasakhun",
+    "project-status": {
+      "available": "Available",
+      "achieved": "Achieved",
+      "internal": "Internal"
+    },
+    "internal": "This project is confidential and cannot be publicly accessed.",
+    "achieved": "This project is no longer accessible and has been frozen by the owner without further development."
   },
   "Hero": {
     "hello": "Hello, I'm <u>Wallop Opasakhun</u>, Front-end Developer",
@@ -20,6 +27,20 @@
       { "key": "freelance", "value": "available" }
     ]
   },
+  "Skills": {
+    "skill-cat": {
+      "frontend": "Frontends",
+      "backend": "Backends",
+      "ui-frameworks": "UI Frameworks",
+      "database": "Databases",
+      "language": "Programming Languages",
+      "cloud": "Cloud Services",
+      "tool": "Tools",
+      "ai": "Artificial Intelligence (AI)"
+    },
+    "title": "Skills",
+    "subtitle": "Hover over each skill to see your years of experience."
+  },
   "Resume": {
     "titles": {
       "education": "Education",
@@ -27,8 +48,6 @@
       "labassistant": "Lab Assistant Experience",
       "competitions": "Competitions Experience",
       "language": "Languages",
-      "skills": "Skills",
-      "skills-desc": "Hover over each skill to see your years of experience.",
       "nondevskills": "Non-developing skills",
       "music": "music",
       "academic": "academics",
@@ -52,6 +71,7 @@
     ],
     "works": [
       {
+        "key": "synapes",
         "date": "May 2022 - Present",
         "title": "Frontend Developer (Full-time)",
         "institution": "Synapes (Thailand) Co., Ltd.",
@@ -59,24 +79,28 @@
         "references": ["https://synapes.ai", "https://selen.ai", "https://senergythailand.com"]
       },
       {
+        "key": "simpli",
         "date": "August 2021 - April 2022",
         "title": "Frontend Developer (Freelance)",
         "institution": "SIMPLI Finance Lab",
         "description": "Developed frontend components for DeFi investment tools using modern web technologies. SIMPLI is a Thai FinTech startup integrating AI to analyze yield, volatility, and impermanent loss across platforms on Binance Smart Chain, helping users optimize decentralized investment portfolios. The project won 2nd place at the SCB10X DeFi Launchpad Hackathon 2021."
       },
       {
+        "key": "scg",
         "date": "October 2021 - March 2022",
         "title": "Contract Full-stack Developer",
         "institution": "SCG Thailand",
         "description": "Built internal back-office web systems for enterprise operations. Worked closely with in-house teams to deliver scalable and maintainable web solutions."
       },
       {
+        "key": "suric",
         "date": "July 2020 - October 2020",
         "title": "System Analyst & Laravel Developer",
         "institution": "Silpakorn University Research, Innovation and Creativity Administration Office",
         "description": "Designed and developed a Laravel-based co-working space booking system for Silpakorn University's Research, Innovation and Creativity Administration Office."
       },
       {
+        "key": "ezygroup",
         "date": "August 2018 - Present",
         "title": "CTO & Full Stack Developer",
         "institution": "Ezygroup Innovation Co., Ltd.",
@@ -183,10 +207,10 @@
     ]
   },
   "Projects": {
-    "subtitle": "Here's some of my work",
+    "subtitle": "Here are some projects I've worked on, each showcasing the skills and technologies I've mastered.",
     "ezygas": {
       "name": "Ezygas",
-      "description": "web-based management system for gas station businesses that streamlines operations with features like stock management, order processing, customer data storage, and automated reporting to help owners manage their gas stations more efficiently from anywhere with internet access."
+      "description": "Web-based management system for gas station businesses that streamlines operations with features like stock management, order processing, customer data storage, and automated reporting to help owners manage their gas stations more efficiently from anywhere with internet access."
     },
     "sol7": {
       "name": "SOL7",
@@ -203,6 +227,14 @@
     "senergy": {
       "name": "Senergy",
       "description": "A clean energy company's website highlighting its sustainable services and mission."
+    },
+    "suric-connector": {
+      "name": "SURIC Connector",
+      "description": "Booking system for research unit co-working space at Silpakorn University, developed with Laravel and React after graduation (no longer maintained)."
+    },
+    "scg": {
+      "name": "SCG Internal Backoffice",
+      "description": "Full-stack internal platform for enterprise operations, designed and developed for SCG's internal business process management."
     }
   }
 }

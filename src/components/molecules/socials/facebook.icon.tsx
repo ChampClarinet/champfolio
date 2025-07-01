@@ -1,15 +1,14 @@
 import type { FC } from "react";
 
+import Link from "@/components/ui/link";
 import { facebook } from "@/config/links";
-
-import Base from "./base";
 
 export interface FacebookIconProps {
   size?: number;
 }
 const FacebookIcon: FC<FacebookIconProps> = ({ size = 50 }) => {
   return (
-    <Base name="Facebook" link={facebook}>
+    <Link name="Facebook" link={facebook}>
       <svg
         width={size}
         height={size}
@@ -27,7 +26,7 @@ const FacebookIcon: FC<FacebookIconProps> = ({ size = 50 }) => {
           fill="var(--background)"
         />
       </svg>
-    </Base>
+    </Link>
   );
 };
 

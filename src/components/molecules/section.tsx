@@ -6,19 +6,22 @@ export interface SectionProps {
   name: string;
   mainContainerClass?: string;
   afterMainContainer?: ReactNode;
+  shouldFit?: boolean;
 }
 const Section: FC<PropsWithChildren<SectionProps>> = ({
   name,
   children,
   afterMainContainer,
   mainContainerClass,
+  shouldFit = false,
 }) => {
   return (
     <section
       id={name}
       className={cn(
         `${name}-section`,
-        "flex min-h-[calc(100vh_-_80px)] shrink flex-col items-center justify-center py-5",
+        "flex min-h-fit shrink flex-col items-center justify-center py-5",
+        shouldFit && "h-[calc(100vh_-_80px)] landscape:max-h-[800px]",
       )}
     >
       <div

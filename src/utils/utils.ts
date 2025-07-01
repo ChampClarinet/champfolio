@@ -12,6 +12,13 @@ export const slideToSection = (sectionId: string) => {
     elem.scrollIntoView({ behavior: "smooth", block: "start" });
   }
 };
+export const slideToElementId = (sectionId: string) => {
+  if (typeof window == "undefined") return;
+  const elem = document.querySelector(`#${sectionId}`);
+  if (elem) {
+    elem.scrollIntoView({ behavior: "smooth", block: "start" });
+  }
+};
 
 export const uniqueArray = <T>(arr: T[]): T[] => {
   return Array.from(new Set(arr));

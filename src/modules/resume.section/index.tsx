@@ -7,13 +7,11 @@ import { Text } from "@/components/ui/text";
 import { fadeIn } from "@/config/animations";
 import { motion } from "motion/react";
 
-import AISkills from "./components/ai";
 import Education from "./components/education";
 import Labs from "./components/labs";
 import Languages from "./components/languages";
 import NonDevSkills from "./components/non-dev";
 import Pets from "./components/pets";
-import Skills from "./components/skills";
 import Works from "./components/works";
 
 const ResumeSection: FC = () => {
@@ -23,14 +21,15 @@ const ResumeSection: FC = () => {
         <Text variant="heading">resume</Text>
       </div>
 
-      <div className="grid gap-8 @3xl:grid-cols-2 @5xl:grid-cols-3">
+      <div className="grid gap-8 @3xl:grid-cols-2">
         {/* 🧑‍💼 Works */}
         <motion.div
           variants={fadeIn}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="max-w-[500px] @3xl:col-span-2 @5xl:col-span-3"
+          className="w-full @3xl:col-span-2"
+          id="work-experience"
         >
           <Works />
         </motion.div>
@@ -42,6 +41,7 @@ const ResumeSection: FC = () => {
           whileInView="visible"
           viewport={{ once: true }}
           className="max-w-[500px]"
+          id="academics"
         >
           <Education />
         </motion.div>
@@ -53,36 +53,22 @@ const ResumeSection: FC = () => {
           whileInView="visible"
           viewport={{ once: true }}
           className="max-w-[500px]"
+          id="lab"
         >
           <Labs />
         </motion.div>
 
-        {/* 💻 Skills */}
-        <motion.div
-          variants={fadeIn}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
-          className="w-full"
-        >
-          <Skills />
-        </motion.div>
-
-        {/* 💻 AI Skills */}
-        <motion.div
-          variants={fadeIn}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
-          className="w-full"
-        >
-          <AISkills />
-        </motion.div>
-
         {/* 🌐 Languages */}
-        <div className="max-w-[300px]">
+        <motion.div
+          variants={fadeIn}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          className="w-full"
+          id="languages"
+        >
           <Languages />
-        </div>
+        </motion.div>
 
         {/* 🎨 NonDevSkills */}
         <motion.div
@@ -90,7 +76,8 @@ const ResumeSection: FC = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="max-w-[300px] @3xl:col-span-2"
+          className="w-full"
+          id="non-dev"
         >
           <NonDevSkills />
         </motion.div>
@@ -101,7 +88,7 @@ const ResumeSection: FC = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="w-full @3xl:col-span-2 @5xl:col-span-3"
+          className="w-full"
         >
           <Pets />
         </motion.div>

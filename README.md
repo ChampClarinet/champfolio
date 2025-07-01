@@ -20,7 +20,7 @@ This is my personal portfolio website where I showcase my professional experienc
 - 🌐 **Languages**
 - 🎨 **Non-dev Interests (Music, Science, Hobbies)**
 - 🐾 **Pets**
-- 🔧 **Projects** — Featuring **EzyGas**, **Selen AI**, **SOL7**, **Synapes**, **Senergy**
+- 🔧 **Projects** — Featuring **Ezygas**, **Selen AI**, **SOL7**, **Synapes**, **Senergy**
 
 ## 🌍 Multi-language Support
 
@@ -35,6 +35,18 @@ Built with accessibility, internationalization, and mobile responsiveness in min
 - Skill filtering in project showcase
 - Responsive grid layout
 - Personal touch from Champ’s musical & pet life 🎷🐕🎮
+
+## 📝 Release Notes
+
+### Version 2.0.0 — 2025-07-01
+
+- New Skills section with categorized display
+- Improved Resume section with subcategories
+- Added dynamic version display linked to GitHub Releases
+- Enhanced responsive UI and navigation menus
+- Bug fixes and performance improvements
+
+See the full details on [GitHub Releases](https://github.com/opasakhuns/champfolio/releases)
 
 ## 📦 Installation & Dev
 
