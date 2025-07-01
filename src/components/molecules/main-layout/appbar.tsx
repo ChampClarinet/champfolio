@@ -102,7 +102,9 @@ const Appbar: FC = () => {
           <div className="hidden lg:flex">
             <nav className="menu mr-2 flex items-stretch gap-2">
               {menuList.map(({ label, onClick, children }) => {
-                const cls = cn("px-2 capitalize lg:px-4 flex items-center");
+                const cls = cn(
+                  "px-2 capitalize lg:px-4 flex items-center cursor-pointer hover:brightness-110",
+                );
                 if (children?.length) {
                   return (
                     <DropdownMenu
@@ -110,7 +112,7 @@ const Appbar: FC = () => {
                       onOpenChange={(state) => setDesktopMenuOpen(state ? "open" : "close")}
                       key={v7()}
                     >
-                      <DropdownMenuTrigger className="flex cursor-pointer items-center gap-1 capitalize">
+                      <DropdownMenuTrigger className={cn(cls, "items-center gap-1 pr-0!")}>
                         {label}
                         <motion.div
                           animate={desktopMenuState}
