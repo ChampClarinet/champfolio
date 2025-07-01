@@ -71,6 +71,7 @@
     ],
     "works": [
       {
+        "key": "synapes",
         "date": "May 2022 - Present",
         "title": "Frontend Developer (Full-time)",
         "institution": "Synapes (Thailand) Co., Ltd.",
@@ -78,24 +79,28 @@
         "references": ["https://synapes.ai", "https://selen.ai", "https://senergythailand.com"]
       },
       {
+        "key": "simpli",
         "date": "August 2021 - April 2022",
         "title": "Frontend Developer (Freelance)",
         "institution": "SIMPLI Finance Lab",
         "description": "Developed frontend components for DeFi investment tools using modern web technologies. SIMPLI is a Thai FinTech startup integrating AI to analyze yield, volatility, and impermanent loss across platforms on Binance Smart Chain, helping users optimize decentralized investment portfolios. The project won 2nd place at the SCB10X DeFi Launchpad Hackathon 2021."
       },
       {
+        "key": "scg",
         "date": "October 2021 - March 2022",
         "title": "Contract Full-stack Developer",
         "institution": "SCG Thailand",
         "description": "Built internal back-office web systems for enterprise operations. Worked closely with in-house teams to deliver scalable and maintainable web solutions."
       },
       {
+        "key": "suric",
         "date": "July 2020 - October 2020",
         "title": "System Analyst & Laravel Developer",
         "institution": "Silpakorn University Research, Innovation and Creativity Administration Office",
         "description": "Designed and developed a Laravel-based co-working space booking system for Silpakorn University's Research, Innovation and Creativity Administration Office."
       },
       {
+        "key": "ezygroup",
         "date": "August 2018 - Present",
         "title": "CTO & Full Stack Developer",
         "institution": "Ezygroup Innovation Co., Ltd.",

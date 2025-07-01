@@ -19,7 +19,11 @@ const AboutSection: FC = () => {
   const metadata = useScopedTranslations<{ key: string; value: string }[]>("About.meta");
   return (
     <motion.div initial="hidden" variants={fadeIn} whileInView="visible" viewport={{ once: true }}>
-      <Section name="about" mainContainerClass="flex-col-reverse gap-5 p-5 sm:grid sm:grid-cols-2">
+      <Section
+        name="about"
+        shouldFit
+        mainContainerClass="flex-col-reverse gap-5 p-5 sm:grid sm:grid-cols-2"
+      >
         <div className="picture-zone flex flex-col items-center justify-center gap-4">
           <Card className="bg-gray-card/5 border-blue-dark dark:border-blue-light hidden py-[20%] sm:block">
             <CardContent className="flex items-center justify-center">
@@ -44,7 +48,7 @@ const AboutSection: FC = () => {
 
         <div className="text-zone mx-auto flex max-w-[80vw] flex-col items-center gap-4 *:text-center sm:items-start *:sm:text-left">
           <Text variant="small-heading">about</Text>
-          <Text className="text-primary text-4xl font-bold">{t("header")}</Text>
+          <Text className="text-primary text-4xl font-semibold">{t("header")}</Text>
           <Text className="whitespace-pre-line" variant="small">
             {t("about")}
           </Text>
