@@ -44,7 +44,7 @@ const AboutSection: FC = () => {
 
         <div className="text-zone mx-auto flex max-w-[80vw] flex-col items-center gap-4 *:text-center sm:items-start *:sm:text-left">
           <Text variant="small-heading">about</Text>
-          <Text className="text-primary text-4xl font-bold">{t("header")}</Text>
+          <Text className="text-primary text-4xl font-semibold">{t("header")}</Text>
           <Text className="whitespace-pre-line" variant="small">
             {t("about")}
           </Text>
