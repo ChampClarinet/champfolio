@@ -1,5 +1,6 @@
 import type { ReactNode } from "react";
 
+import GAScript from "@/components/molecules/ga.script";
 import Global from "@/components/molecules/global";
 import { routing } from "@/i18n/routing";
 import { ThemeProvider } from "@/providers/theme";
@@ -27,6 +28,9 @@ export default async function LocaleLayout({
 
   return (
     <html lang={locale} suppressHydrationWarning>
+      <head suppressHydrationWarning>
+        <GAScript />
+      </head>
       <body className="overflow-hidden antialiased">
         <ThemeProvider
           attribute="class"
