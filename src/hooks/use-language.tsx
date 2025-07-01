@@ -9,7 +9,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
-import { fallbackLangauge, supportedLanguages } from "@/config/langauges";
+import { fallbackLangauge, supportedLanguages } from "@/config/languages";
 import { usePathname } from "next/navigation";
 
 export const useLanguage = () => {
