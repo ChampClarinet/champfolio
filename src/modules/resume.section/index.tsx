@@ -28,7 +28,7 @@ const ResumeSection: FC = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="max-w-[500px] @3xl:col-span-2 @5xl:col-span-3"
+          className="w-full @3xl:col-span-2 @5xl:col-span-3"
         >
           <Works />
         </motion.div>
