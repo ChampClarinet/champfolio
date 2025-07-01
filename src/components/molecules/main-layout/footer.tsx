@@ -4,6 +4,7 @@ import { type FC } from "react";
 
 import Socials from "@/components/molecules/socials";
 import { Text } from "@/components/ui/text";
+import { version } from "@/config";
 import { fadeIn } from "@/config/animations";
 import { motion } from "motion/react";
 import { useTranslations } from "next-intl";
@@ -24,7 +25,7 @@ const FooterSection: FC = () => {
         </div>
 
         <Text className="text-center">
-          © {new Date().getFullYear()} {t("name")}. All rights reserved.
+          © {new Date().getFullYear()} {t("name")}. All rights reserved. version {version}
         </Text>
       </footer>
     </motion.div>
