@@ -27,7 +27,20 @@
       { "key": "自由職業", "value": "可接案" }
     ]
   },
-
+  "Skills": {
+    "title": "開發技能",
+    "subtitle": "將滑鼠懸停在每項技能上，即可查看您的經驗年數。",
+    "skill-cat": {
+      "frontend": "前端",
+      "backend": "後端",
+      "ui-frameworks": "使用者介面框架",
+      "database": "資料庫",
+      "language": "程式語言",
+      "cloud": "雲端服務",
+      "tool": "工具",
+      "ai": "人工智慧 (AI)"
+    }
+  },
   "Resume": {
     "titles": {
       "education": "學歷",
@@ -35,8 +48,6 @@
       "labassistant": "助教經驗",
       "competitions": "競賽經驗",
       "language": "語言能力",
-      "skills": "開發技能",
-      "skills-desc": "將滑鼠懸停在每項技能上，即可查看您的經驗年數。",
       "nondevskills": "其他技能與興趣",
       "music": "音樂",
       "academic": "學術領域",
