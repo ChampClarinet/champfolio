@@ -27,6 +27,20 @@
       { "key": "freelance", "value": "พร้อมรับงาน" }
     ]
   },
+  "Skills": {
+    "skill-cat": {
+      "frontend": "Frontends",
+      "backend": "Backends",
+      "ui-frameworks": "UI Frameworks",
+      "database": "Databases",
+      "language": "Programming Languages",
+      "cloud": "Cloud Services",
+      "tool": "Tools",
+      "ai": "Artificial Intelligence (AI)"
+    },
+    "title": "Skills",
+    "subtitle": "นำเมาส์ไปวางเพื่อดูจำนวนปีของประสบการณ์"
+  },
   "Resume": {
     "titles": {
       "education": "การศึกษา",
@@ -34,8 +48,6 @@
       "labassistant": "ประสบการณ์ผู้ช่วยสอนในห้องปฏิบัติการ",
       "competitions": "ประสบการณ์แข่งขัน",
       "language": "ภาษา",
-      "skills": "ทักษะ",
-      "skills-desc": "นำเมาส์ไปวางเพื่อดูจำนวนปีของประสบการณ์",
       "nondevskills": "ทักษะอื่นๆ",
       "music": "ดนตรี",
       "academic": "การศึกษา",
