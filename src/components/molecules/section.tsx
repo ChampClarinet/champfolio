@@ -20,8 +20,8 @@ const Section: FC<PropsWithChildren<SectionProps>> = ({
       id={name}
       className={cn(
         `${name}-section`,
-        "flex shrink flex-col items-center justify-center py-5",
-        shouldFit ? "h-[calc(100vh_-_80px)] max-h-[800px]" : "min-h-fit",
+        "flex min-h-fit shrink flex-col items-center justify-center py-5",
+        shouldFit && "h-[calc(100vh_-_80px)] landscape:max-h-[800px]",
       )}
     >
       <div

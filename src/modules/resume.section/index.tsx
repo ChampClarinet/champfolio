@@ -29,6 +29,7 @@ const ResumeSection: FC = () => {
           whileInView="visible"
           viewport={{ once: true }}
           className="w-full @3xl:col-span-2"
+          id="work-experience"
         >
           <Works />
         </motion.div>
@@ -40,6 +41,7 @@ const ResumeSection: FC = () => {
           whileInView="visible"
           viewport={{ once: true }}
           className="max-w-[500px]"
+          id="academics"
         >
           <Education />
         </motion.div>
@@ -51,6 +53,7 @@ const ResumeSection: FC = () => {
           whileInView="visible"
           viewport={{ once: true }}
           className="max-w-[500px]"
+          id="lab"
         >
           <Labs />
         </motion.div>
@@ -62,6 +65,7 @@ const ResumeSection: FC = () => {
           whileInView="visible"
           viewport={{ once: true }}
           className="w-full"
+          id="languages"
         >
           <Languages />
         </motion.div>
@@ -73,6 +77,7 @@ const ResumeSection: FC = () => {
           whileInView="visible"
           viewport={{ once: true }}
           className="w-full"
+          id="non-dev"
         >
           <NonDevSkills />
         </motion.div>
