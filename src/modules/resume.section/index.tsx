@@ -7,13 +7,11 @@ import { Text } from "@/components/ui/text";
 import { fadeIn } from "@/config/animations";
 import { motion } from "motion/react";
 
-import AISkills from "./components/ai";
 import Education from "./components/education";
 import Labs from "./components/labs";
 import Languages from "./components/languages";
 import NonDevSkills from "./components/non-dev";
 import Pets from "./components/pets";
-import Skills from "./components/skills";
 import Works from "./components/works";
 
 const ResumeSection: FC = () => {
@@ -55,28 +53,6 @@ const ResumeSection: FC = () => {
           className="max-w-[500px]"
         >
           <Labs />
-        </motion.div>
-
-        {/* 💻 Skills */}
-        <motion.div
-          variants={fadeIn}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
-          className="w-full"
-        >
-          <Skills />
-        </motion.div>
-
-        {/* 💻 AI Skills */}
-        <motion.div
-          variants={fadeIn}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
-          className="w-full"
-        >
-          <AISkills />
         </motion.div>
 
         {/* 🌐 Languages */}
