@@ -30,6 +30,7 @@ const HeroSection: FC = () => {
       <Section
         name="hero"
         mainContainerClass="items-center md:max-w-[min(80%,_850px)] portrait:gap-14 landscape:gap-10"
+        shouldFit
         afterMainContainer={
           <Image
             src={ArrowDownIcon}

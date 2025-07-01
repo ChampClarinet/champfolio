@@ -1,4 +1,4 @@
-import { supportedLanguages } from "@/config/langauges";
+import { supportedLanguages } from "@/config/languages";
 import { defineRouting } from "next-intl/routing";
 
 const locales = supportedLanguages.map(({ key }) => key);

@@ -1,15 +1,14 @@
 import type { FC } from "react";
 
+import Link from "@/components/ui/link";
 import { medium } from "@/config/links";
-
-import Base from "./base";
 
 export interface MediumIconProps {
   size?: number;
 }
 const MediumIcon: FC<MediumIconProps> = ({ size = 50 }) => {
   return (
-    <Base name="Medium" link={medium}>
+    <Link name="Medium" link={medium}>
       <svg
         width={size}
         height={size}
@@ -26,7 +25,7 @@ const MediumIcon: FC<MediumIconProps> = ({ size = 50 }) => {
           />
         </g>
       </svg>
-    </Base>
+    </Link>
   );
 };
 

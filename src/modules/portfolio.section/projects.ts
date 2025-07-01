@@ -2,6 +2,7 @@ export const projects = [
   {
     projectKey: "ezygas",
     link: "https://ezygas.co",
+    status: "available",
     img: "ezygas.png",
     tags: [
       "nextjs",
@@ -17,6 +18,7 @@ export const projects = [
   {
     projectKey: "sol7",
     img: "sol7.png",
+    status: "available",
     link: "https://sol7.ai",
     tags: ["nextjs", "typescript", "tailwindcss", "docker", "docker compose"],
   },
@@ -24,6 +26,7 @@ export const projects = [
     projectKey: "selen",
     link: "https://selen.ai",
     img: "selen.png",
+    status: "available",
     tags: [
       "nextjs",
       "typescript",
@@ -38,13 +41,29 @@ export const projects = [
   {
     projectKey: "synapes",
     img: "synapes.png",
+    status: "available",
     link: "https://synapes.ai",
     tags: ["nextjs", "typescript", "tailwindcss", "docker", "docker compose", "strapi"],
   },
   {
     projectKey: "senergy",
     img: "senergy.png",
+    status: "available",
     link: "https://senergythailand.com",
     tags: ["gatsbyjs", "typescript", "tailwindcss", "docker", "docker compose"],
+  },
+  {
+    projectKey: "suric-connector",
+    img: "suconnector.png",
+    status: "achieved",
+    link: null,
+    tags: ["laravel", "reactjs", "css", "php", "bootstrap", "MySQL"],
+  },
+  {
+    projectKey: "scg",
+    img: "internal.png",
+    status: "internal",
+    link: null,
+    tags: ["nextjs", "typescript", "kendo-react", "ExpressJS", "MSSQL"],
   },
 ];
