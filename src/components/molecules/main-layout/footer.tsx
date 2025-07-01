@@ -3,14 +3,17 @@
 import { type FC } from "react";
 
 import Socials from "@/components/molecules/socials";
+import Link from "@/components/ui/link";
 import { Text } from "@/components/ui/text";
 import { version } from "@/config";
 import { fadeIn } from "@/config/animations";
+import { thisRepo } from "@/config/links";
 import { motion } from "motion/react";
 import { useTranslations } from "next-intl";
 
 const FooterSection: FC = () => {
   const t = useTranslations("General");
+  const copyright = `© ${new Date().getFullYear()} ${t("name")}. All rights reserved.`;
   return (
     <motion.div initial="hidden" variants={fadeIn} whileInView="visible" viewport={{ once: true }}>
       <footer
@@ -25,7 +28,10 @@ const FooterSection: FC = () => {
         </div>
 
         <Text className="text-center">
-          © {new Date().getFullYear()} {t("name")}. All rights reserved. version {version}
+          {copyright}{" "}
+          <Link link={`${thisRepo}/releases/tag/${version}`} className="underline">
+            version {version}
+          </Link>
         </Text>
       </footer>
     </motion.div>
