@@ -30,6 +30,7 @@ const Appbar: FC = () => {
   const items = [
     { label: "home", onClick: scrollToTop },
     { label: "about", onClick: () => slideToSection("about") },
+    { label: "skills", onClick: () => slideToSection("skills") },
     { label: "resume", onClick: () => slideToSection("resume") },
     { label: "portfolio", onClick: () => slideToSection("portfolio") },
   ];
@@ -43,7 +44,7 @@ const Appbar: FC = () => {
         <div className="left-area flex items-center gap-2">
           <DropdownMenu>
             <DropdownMenuTrigger>
-              <MenuIcon className="cursor-pointer md:hidden" />
+              <MenuIcon className="cursor-pointer lg:hidden" />
             </DropdownMenuTrigger>
             <DropdownMenuContent className="z-101">
               {items.map(({ label, onClick }, i) => (
@@ -65,7 +66,7 @@ const Appbar: FC = () => {
         </div>
 
         <div className="flex items-center gap-4">
-          <div className="hidden md:flex">
+          <div className="hidden lg:flex">
             <nav className="menu mr-2 flex items-stretch gap-2">
               {items.map(({ label, onClick }, i) => (
                 <Button

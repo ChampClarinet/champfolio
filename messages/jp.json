@@ -27,6 +27,20 @@
       { "key": "フリーランス", "value": "対応可能" }
     ]
   },
+  "Skills": {
+    "title": "スキル",
+    "subtitle": "各スキルにカーソルを合わせると、経験年数が表示されます。",
+    "skill-cat": {
+      "frontend": "フロントエンド",
+      "backend": "バックエンド",
+      "ui-frameworks": "UIフレームワーク",
+      "database": "データベース",
+      "language": "プログラミング言語",
+      "cloud": "クラウドサービス",
+      "tool": "ツール",
+      "ai": "人工知能 (AI)"
+    }
+  },
   "Resume": {
     "titles": {
       "education": "学歴",
@@ -34,8 +48,6 @@
       "labassistant": "TA・実験補助経験",
       "competitions": "コンテスト経験",
       "language": "言語スキル",
-      "skills": "開発スキル",
-      "skills-desc": "各スキルにカーソルを合わせると、経験年数が表示されます。",
       "nondevskills": "その他スキル・関心",
       "music": "音楽",
       "academic": "学術・知識",

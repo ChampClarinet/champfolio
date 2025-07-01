@@ -27,6 +27,20 @@
       { "key": "freelance", "value": "available" }
     ]
   },
+  "Skills": {
+    "skill-cat": {
+      "frontend": "Frontends",
+      "backend": "Backends",
+      "ui-frameworks": "UI Frameworks",
+      "database": "Databases",
+      "language": "Programming Languages",
+      "cloud": "Cloud Services",
+      "tool": "Tools",
+      "ai": "Artificial Intelligence (AI)"
+    },
+    "title": "Skills",
+    "subtitle": "Hover over each skill to see your years of experience."
+  },
   "Resume": {
     "titles": {
       "education": "Education",
@@ -34,8 +48,6 @@
       "labassistant": "Lab Assistant Experience",
       "competitions": "Competitions Experience",
       "language": "Languages",
-      "skills": "Skills",
-      "skills-desc": "Hover over each skill to see your years of experience.",
       "nondevskills": "Non-developing skills",
       "music": "music",
       "academic": "academics",
