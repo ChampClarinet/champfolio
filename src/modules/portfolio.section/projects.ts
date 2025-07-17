@@ -27,16 +27,7 @@ export const projects = [
     link: "https://selen.ai",
     img: "selen.png",
     status: "available",
-    tags: [
-      "nextjs",
-      "typescript",
-      "tailwindcss",
-      "docker",
-      "docker compose",
-***REMOVED***
-      "strapi",
-***REMOVED***
-    ],
+    tags: ["nextjs", "typescript", "tailwindcss", "docker", "docker compose", "strapi"],
   },
   {
     projectKey: "synapes",
