@@ -6,6 +6,14 @@ This is my personal portfolio website where I showcase my professional experienc
 
 ---
 
+## ✨ New Feature: “Buy Me a Coffee” Button
+
+Support my work with a coffee ☕  
+A new floating **Buy Me a Coffee** button has been added next to the **Scroll-to-Top** FAB.  
+It features smooth animation and a tooltip when you hover over it.
+
+---
+
 ## 🚀 Tech Stack
 
 - **Frontend:** Next.js, React, TypeScript, Tailwind CSS, ShadCN UI, Framer Motion
@@ -49,6 +57,16 @@ Built with accessibility, internationalization, and mobile responsiveness in min
 
 ## 📝 Release Notes
 
+### Version 2.1.0 - 2025-10-17
+
+- Add new floating **Buy Me a Coffee** button has been added next to the **Scroll-to-Top** FAB.
+
+#### Behaviour
+
+- When you scroll to the top, only the coffee button remains visible.
+- The button lightly bounces when idle for a friendly touch.
+- Clicking it opens my Buy Me a Coffee page in a new tab.
+
 ### Version 2.0.1 — 2025-07-01
 
 - Added support for **Google Analytics (GA4)** using `nextjs-google-analytics`
@@ -77,3 +95,19 @@ bun install
 # Run locally
 bun dev
 ```
+
+---
+
+## 💖 Support Me
+
+If you enjoy this project and want to support my work:
+
+[![Buy Me a Coffee](https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png)](https://www.buymeacoffee.com/<your_id>)
+
+It means a lot to me. Thank you! 🙏
+
+---
+
+## 📜 Changelog
+
+See the [CHANGELOG.md](./CHANGELOG.md) for all recent updates.
