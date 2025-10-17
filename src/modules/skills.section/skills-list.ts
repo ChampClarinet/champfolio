@@ -32,6 +32,7 @@ export const skills: Skill[] = [
   { title: "Vite", years: 3, tags: ["tool"] },
   { title: "pnpm", years: 3, tags: ["tool"] },
   { title: "Python3", years: 3, tags: ["language"] },
+  { title: "ChatGPT", years: 2, tags: ["ai"] },
   { title: "Bun", years: 1, tags: ["tool", "language"] },
   { title: "ClaudeAI", years: 1, link: "https://claude.ai", tags: ["ai"] },
   { title: "ElysiaJS", years: 1, tags: ["backend"] },
