@@ -2,11 +2,11 @@
 
 import { type FC, type PropsWithChildren, useEffect, useState } from "react";
 
-import { Button } from "@/components/ui/button";
 import { ScrollArea } from "@/components/ui/scroll-area";
-import { scrollToTop } from "@/utils/utils";
-import { ArrowUpIcon } from "lucide-react";
+import { AnimatePresence, LayoutGroup, motion } from "motion/react";
 
+import BuyMeACoffeeButton from "../buy-me-a-coffee";
+import ScrollToTopButton from "../scroll-to-top.button";
 import Appbar from "./appbar";
 import Footer from "./footer";
 
@@ -33,16 +33,20 @@ const MainLayout: FC<PropsWithChildren> = ({ children }) => {
         <main className="flex flex-col pb-20">{children}</main>
         <Footer />
       </ScrollArea>
-      {!onTopPosition && (
-        <div className="fixed right-5 bottom-5">
-          <Button
-            className="flex h-10 w-10 items-center justify-center rounded-full !p-0"
-            onClick={scrollToTop}
+      <div className="fixed right-5 bottom-5">
+        <LayoutGroup id="fab">
+          <motion.div
+            className="flex flex-col items-end gap-4"
+            layoutRoot
+            transition={{ layout: { type: "spring", stiffness: 340, damping: 30 } }}
           >
-            <ArrowUpIcon />
-          </Button>
-        </div>
-      )}
+            <BuyMeACoffeeButton onTop={onTopPosition} />
+            <AnimatePresence initial={false} mode="popLayout">
+              {!onTopPosition && <ScrollToTopButton />}
+            </AnimatePresence>
+          </motion.div>
+        </LayoutGroup>
+      </div>
     </div>
   );
 };

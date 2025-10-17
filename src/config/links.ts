@@ -15,3 +15,4 @@ export const nodejs = "https://nodejs.org";
 export const cv =
   "https://drive.google.com/file/d/1aVrUJXRE8PxEAJBt0H9GsbGzylbXyVbq/view?usp=sharing";
 export const thisRepo = "https://github.com/ChampClarinet/champfolio";
+export const buyMeACoffee = "https://buymeacoffee.com/champclarinet";
