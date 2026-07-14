@@ -11,12 +11,14 @@
     "achieved": "This project is no longer accessible and has been frozen by the owner without further development."
   },
   "Hero": {
+    "tagline": "Frontend engineering · Product-minded delivery",
+    "viewPortfolio": "View portfolio",
     "hello": "Hello, I'm <u>Wallop Opasakhun</u>, Front-end Developer",
-    "introduce": "Hi, I'm Wallop (“Champ”) — a frontend web developer at <synapes>Synapes</synapes> and CTO at Ezygroup Innovation. I specialize in building scalable, responsive UIs using <react>React</react> (<nextjs>Next.js</nextjs>), <ts>TypeScript</ts>, <bun>Bun</bun> and <flutter>Flutter</flutter>. While I occasionally work on backend systems with <django>Django</django> or <node>Node.js</node>, and handle Dockerization and GitHub CI/CD, my primary focus is crafting clean, maintainable code and delivering seamless user experiences across platforms. I'm passionate about clean and seamless code, and seeking for new experiences. 🎸🌱"
+    "introduce": "Hi, I'm Wallop (“Champ”) — a frontend developer at <synapes>Synapes</synapes> and CTO at Ezygroup Innovation. I build scalable, responsive products with <react>React</react>, <nextjs>Next.js</nextjs>, <ts>TypeScript</ts>, <bun>Bun</bun>, and <flutter>Flutter</flutter>. I also work across <django>Django</django>, <node>Node.js</node>, Docker, and CI/CD when a product needs end-to-end ownership. My focus is clean, maintainable code and seamless user experiences. 🎸🌱"
   },
   "About": {
     "header": "Build clean & scalable\napps and systems",
-    "about": "A web developer specialized in Next.js and Flutter for developing and assembling UI based on designs, delivering fast and responsive performance on both web and mobile applications. Experienced in using Docker for containerization and developing production-grade applications, with a comprehensive understanding of frontend, backend, and DevOps systems to deliver stable, maintainable, and efficient software.",
+    "about": "A web developer specializing in Next.js and Flutter, translating product designs into fast, responsive web and mobile interfaces. Experienced with Docker and production-grade delivery, with enough frontend, backend, and DevOps depth to build software that stays stable, maintainable, and efficient.",
     "downloadcv": "Download CV",
     "meta": [
       { "key": "name", "value": "Wallop Opasakhun" },
