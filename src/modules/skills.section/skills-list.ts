@@ -11,7 +11,7 @@ import {
 
 export const skills: Skill[] = [
   { title: "CSS", years: 7, tags: ["frontend", "language"] },
-  { title: "Github", years: 7, tags: ["tool"] },
+  { title: "GitHub", years: 7, tags: ["tool"] },
   { title: "HTML", years: 7, tags: ["frontend", "language"] },
   { title: "JavaScript", years: 7, tags: ["frontend", "language"] },
   { title: "Linux Server", years: 7, tags: ["tool"] },
@@ -38,11 +38,11 @@ export const skills: Skill[] = [
   { title: "ElysiaJS", years: 1, tags: ["backend"] },
   { title: "Flutter", years: 1, tags: ["frontend", "language"] },
   { title: "GatsbyJS", years: 1, tags: ["frontend", "ui-frameworks"] },
-  { title: "Github CI/CD", years: 1, tags: ["tool"] },
+  { title: "GitHub CI/CD", years: 1, tags: ["tool"] },
   { title: "Laravel", years: 1, tags: ["backend", "frontend"] },
   { title: "MongoDB", years: 1, tags: ["database"] },
   { title: "NestJS", years: 1, tags: ["backend"] },
-  { title: "Preplexity", years: 1, link: "https://www.perplexity.ai", tags: ["ai"] },
+  { title: "Perplexity", years: 1, link: "https://www.perplexity.ai", tags: ["ai"] },
   { title: "SOL7", years: 1, link: "https://sol7.ai", tags: ["ai"] },
   { title: "ShadCN", years: 1, tags: ["ui-frameworks"] },
   { title: "Java", years: 1, tags: ["language"] },
