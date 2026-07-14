@@ -6,12 +6,17 @@ import { routing } from "@/i18n/routing";
 import { ThemeProvider } from "@/providers/theme";
 import type { Metadata } from "next";
 import { NextIntlClientProvider, hasLocale } from "next-intl";
+import { setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
 
 export const metadata: Metadata = {
   title: "Champfolio",
   description: "Wallop Opasakhun's portfolio",
 };
+
+export function generateStaticParams() {
+  return routing.locales.map((locale) => ({ locale }));
+}
 
 export default async function LocaleLayout({
   children,
@@ -25,6 +30,8 @@ export default async function LocaleLayout({
   if (!hasLocale(routing.locales, locale)) {
     notFound();
   }
+
+  setRequestLocale(locale);
 
   return (
     <html lang={locale} suppressHydrationWarning>
