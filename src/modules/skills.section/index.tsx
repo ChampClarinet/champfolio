@@ -35,7 +35,7 @@ const SkillSection: FC = () => {
                   <div className="flex w-full flex-wrap gap-2">
                     {skills
                       .filter((s) => s.tags.includes(category.key))
-                      .map(({ title, years, link }) => {
+                      .map(({ title, since, link }) => {
                         const badge = <Badge>{title}</Badge>;
                         return (
                           <Tooltip key={title}>
@@ -49,7 +49,7 @@ const SkillSection: FC = () => {
                               )}
                             </TooltipTrigger>
                             <TooltipContent>
-                              <p>{`${years} year${years > 1 ? "s" : ""}`}</p>
+                              <p>{`Since ${since}`}</p>
                             </TooltipContent>
                           </Tooltip>
                         );

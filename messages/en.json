@@ -22,7 +22,7 @@
     "downloadcv": "Download CV",
     "meta": [
       { "key": "name", "value": "Wallop Opasakhun" },
-      { "key": "age", "value": "31 Years" },
+      { "key": "age", "value": "{age} Years" },
       { "key": "nationality", "value": "Thai" },
       { "key": "phone", "value": "+66819543213" },
       { "key": "languages", "value": "Thai, English" },

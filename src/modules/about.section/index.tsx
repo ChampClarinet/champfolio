@@ -17,6 +17,7 @@ import Image from "next/image";
 const AboutSection: FC = () => {
   const t = useTranslations("About");
   const metadata = useScopedTranslations<{ key: string; value: string }[]>("About.meta");
+  const age = now.getFullYear() - birthYear - (hasHadBirthdayThisYear ? 0 : 1);
   return (
     <motion.div initial="hidden" variants={fadeIn} whileInView="visible" viewport={{ once: true }}>
       <Section
@@ -57,7 +58,9 @@ const AboutSection: FC = () => {
             {metadata.map((meta) => (
               <Fragment key={meta.key}>
                 <Text className="font-medium capitalize dark:text-white">{meta.key}</Text>
-                <Text className="text-foreground/70 dark:text-blue-light capitalize">{`: ${meta.value}`}</Text>
+                <Text className="text-foreground/70 dark:text-blue-light capitalize">
+                  {`: ${meta.value.includes("{age}") ? meta.value.replace("{age}", String(age)) : meta.value}`}
+                </Text>
               </Fragment>
             ))}
           </div>
@@ -68,3 +71,10 @@ const AboutSection: FC = () => {
 };
 
 export default AboutSection;
+
+const now = new Date();
+const birthYear = 1994;
+const birthMonth = 6;
+const birthDate = 19;
+const hasHadBirthdayThisYear =
+  now.getMonth() > birthMonth || (now.getMonth() === birthMonth && now.getDate() >= birthDate);

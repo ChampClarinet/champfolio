@@ -22,7 +22,7 @@
     "downloadcv": "下載 CV",
     "meta": [
       { "key": "姓名", "value": "麥凱勝" },
-      { "key": "年齡", "value": "31 歲" },
+      { "key": "年齡", "value": "{age} 歲" },
       { "key": "國籍", "value": "泰國" },
       { "key": "電話", "value": "+66819543213" },
       { "key": "語言", "value": "泰語, 英語" },

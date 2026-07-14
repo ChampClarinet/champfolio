@@ -22,7 +22,7 @@
     "downloadcv": "Download CV",
     "meta": [
       { "key": "name", "value": "วัลลภ โอภาสะคุณ" },
-      { "key": "age", "value": "31 ปี" },
+      { "key": "age", "value": "{age} ปี" },
       { "key": "nationality", "value": "ไทย" },
       { "key": "phone", "value": "0819543213" },
       { "key": "languages", "value": "ภาษาไทย, ภาษาอังกฤษ" },
