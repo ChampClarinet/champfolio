@@ -39,7 +39,7 @@ const SkillSection: FC = () => {
                         const badge = <Badge>{title}</Badge>;
                         return (
                           <Tooltip key={title}>
-                            <TooltipTrigger>
+                            <TooltipTrigger asChild={Boolean(link)}>
                               {link ? (
                                 <Link name={title} link={link}>
                                   {badge}
