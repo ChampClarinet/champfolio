@@ -37,7 +37,7 @@ const PortfolioSection: FC = () => {
                   : "bg-gray-500 dark:bg-gray-700";
             return (
               <Tooltip key={projectKey}>
-                <TooltipTrigger>
+                <TooltipTrigger asChild={Boolean(link)}>
                   <Link name={t(`${projectKey}.name`)} link={link ?? undefined}>
                     <Card className="bg-card/50 h-full overflow-hidden border-transparent p-0">
                       <Image

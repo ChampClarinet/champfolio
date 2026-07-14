@@ -2,7 +2,7 @@ export const projects = [
   {
     projectKey: "ezygas",
     link: "https://ezygas.co",
-    status: "available",
+    status: "achieved",
     img: "ezygas.png",
     tags: [
       "nextjs",
@@ -18,7 +18,7 @@ export const projects = [
   {
     projectKey: "sol7",
     img: "sol7.png",
-    status: "available",
+    status: "achieved",
     link: "https://sol7.ai",
     tags: ["nextjs", "typescript", "tailwindcss", "docker", "docker compose"],
   },
@@ -39,7 +39,7 @@ export const projects = [
   {
     projectKey: "senergy",
     img: "senergy.png",
-    status: "available",
+    status: "achieved",
     link: "https://senergythailand.com",
     tags: ["gatsbyjs", "typescript", "tailwindcss", "docker", "docker compose"],
   },
