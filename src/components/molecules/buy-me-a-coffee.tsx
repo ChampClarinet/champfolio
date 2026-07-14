@@ -13,9 +13,6 @@ export interface BuyMeACoffeeButtonProps {
   onTop: boolean;
 }
 const BuyMeACoffeeButton: FC<BuyMeACoffeeButtonProps> = ({ onTop }) => {
-  const onClick = () => {
-    if (typeof window !== "undefined") window.open(buyMeACoffee, "_blank");
-  };
   return (
     <motion.div
       layout
@@ -24,13 +21,15 @@ const BuyMeACoffeeButton: FC<BuyMeACoffeeButtonProps> = ({ onTop }) => {
     >
       <Tooltip>
         <TooltipTrigger asChild>
-          <Button
-            asChild
-            className="flex h-10 w-10 items-center justify-center rounded-full !p-0"
-            aria-label="Buy me a coffee"
-            onClick={onClick}
-          >
-            <Text className="text-2xl">☕</Text>
+          <Button asChild className="flex h-10 w-10 items-center justify-center rounded-full !p-0">
+            <a
+              href={buyMeACoffee}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Buy me a coffee"
+            >
+              <Text className="text-2xl">☕</Text>
+            </a>
           </Button>
         </TooltipTrigger>
         <TooltipContent>

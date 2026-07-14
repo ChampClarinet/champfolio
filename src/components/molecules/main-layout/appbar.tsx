@@ -29,7 +29,6 @@ import { useTheme } from "@/hooks/use-theme";
 import { cn, scrollToTop, slideToElementId, slideToSection } from "@/utils/utils";
 import { ChevronDown, MenuIcon } from "lucide-react";
 import { motion } from "motion/react";
-import { v7 } from "uuid";
 
 const Appbar: FC = () => {
   const { resolvedTheme, switcher, setTheme } = useTheme();
@@ -52,7 +51,7 @@ const Appbar: FC = () => {
         <div className="left-area flex items-center gap-2">
           <Menubar className="border-none">
             <MenubarMenu>
-              <MenubarTrigger>
+              <MenubarTrigger aria-label="Open navigation menu">
                 <MenuIcon className="cursor-pointer lg:hidden" />
               </MenubarTrigger>
               <MenubarPortal>
@@ -60,13 +59,13 @@ const Appbar: FC = () => {
                   {menuList.map(({ label, onClick, children }) => {
                     if (children?.length) {
                       return (
-                        <MenubarSub key={v7()}>
-                          <MenubarSubTrigger key={v7()} className={mobileMenuClasses}>
+                        <MenubarSub key={label}>
+                          <MenubarSubTrigger className={mobileMenuClasses}>
                             {label}
                           </MenubarSubTrigger>
                           <MenubarSubContent className="absolute bottom-0">
                             {children.map(({ onClick, label }) => (
-                              <MenubarItem key={v7()} onClick={onClick}>
+                              <MenubarItem key={label} onClick={onClick}>
                                 {label}
                               </MenubarItem>
                             ))}
@@ -75,7 +74,7 @@ const Appbar: FC = () => {
                       );
                     }
                     return (
-                      <MenubarItem className={mobileMenuClasses} key={v7()} onClick={onClick}>
+                      <MenubarItem className={mobileMenuClasses} key={label} onClick={onClick}>
                         {label}
                       </MenubarItem>
                     );
@@ -93,9 +92,14 @@ const Appbar: FC = () => {
             </MenubarMenu>
           </Menubar>
 
-          <Text variant="logo" className="xxs:block hidden">
-            Champ
-          </Text>
+          <button
+            type="button"
+            aria-label="Back to the top"
+            className="xxs:block focus-visible:ring-ring/50 hidden cursor-pointer rounded-sm focus-visible:ring-3 focus-visible:outline-none"
+            onClick={scrollToTop}
+          >
+            <Text variant="logo">Champ</Text>
+          </button>
         </div>
 
         <div className="flex items-center gap-4">
@@ -110,7 +114,7 @@ const Appbar: FC = () => {
                     <DropdownMenu
                       open={desktopMenuState == "open"}
                       onOpenChange={(state) => setDesktopMenuOpen(state ? "open" : "close")}
-                      key={v7()}
+                      key={label}
                     >
                       <DropdownMenuTrigger className={cn(cls, "items-center gap-1 pr-0!")}>
                         {label}
@@ -130,7 +134,7 @@ const Appbar: FC = () => {
                       <DropdownMenuContent className="z-1001">
                         {children.map(({ label, onClick }) => (
                           <DropdownMenuItem
-                            key={v7()}
+                            key={label}
                             onClick={onClick}
                             className={cn(cls, "cursor-pointer")}
                           >
@@ -142,9 +146,9 @@ const Appbar: FC = () => {
                   );
                 }
                 return (
-                  <Text key={v7()} onClick={onClick} className={cls}>
+                  <button type="button" key={label} onClick={onClick} className={cls}>
                     {label}
-                  </Text>
+                  </button>
                 );
               })}
             </nav>

@@ -16,7 +16,10 @@ const Link: FC<PropsWithChildren<BaseProps>> = ({ children, link, name, classNam
       target="_blank"
       rel="noopener noreferrer"
       aria-label={name}
-      className={cn("cursor-pointer", className)}
+      className={cn(
+        "focus-visible:ring-ring/50 cursor-pointer rounded-sm focus-visible:ring-3 focus-visible:outline-none",
+        className,
+      )}
     >
       {children}
     </NextLink>
