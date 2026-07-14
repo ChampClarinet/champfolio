@@ -20,5 +20,5 @@ else
 fi
 
 # ✅ Run lint-staged
-npx lint-staged
+bunx lint-staged
 exit 0
