@@ -8,7 +8,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Text } from "@/components/ui/text";
 import { fadeIn } from "@/config/animations";
-import { cv } from "@/config/links";
+import { cv, phone } from "@/config/links";
 import { useScopedTranslations } from "@/hooks/use-scope-translation";
 import { motion } from "motion/react";
 import { useTranslations } from "next-intl";
@@ -59,7 +59,7 @@ const AboutSection: FC = () => {
               <Fragment key={meta.key}>
                 <Text className="font-medium capitalize dark:text-white">{meta.key}</Text>
                 <Text className="text-foreground/70 dark:text-blue-light capitalize">
-                  {`: ${meta.value.includes("{age}") ? meta.value.replace("{age}", String(age)) : meta.value}`}
+                  {`: ${formatMetaValue(meta.value, age)}`}
                 </Text>
               </Fragment>
             ))}
@@ -78,3 +78,11 @@ const birthMonth = 6;
 const birthDate = 19;
 const hasHadBirthdayThisYear =
   now.getMonth() > birthMonth || (now.getMonth() === birthMonth && now.getDate() >= birthDate);
+
+const formatMetaValue = (value: string, age: number) => {
+  if (value.replace(/\D/g, "") === "66819543213" || value.replace(/\D/g, "") === "0819543213") {
+    return phone;
+  }
+
+  return value.includes("{age}") ? value.replace("{age}", String(age)) : value;
+};

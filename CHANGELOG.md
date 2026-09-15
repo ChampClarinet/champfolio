@@ -1,5 +1,27 @@
 # Changelog
 
+## [2.2.0] - 2026-07-15
+
+### Added
+
+- Dynamic age rendering in the About section based on the current date.
+- Skill tooltips now show `Since {year}` to reflect first-use year instead of rounded experience counts.
+- Refreshed skill metadata across the Skills section with explicit starting years.
+
+### Changed
+
+- Updated localized About metadata in all supported languages to support runtime age interpolation.
+- Refined the Skills and About sections to present more precise, time-aware profile information.
+
+### Performance
+
+- Added `generateStaticParams()` for locale routes to improve static prerendering.
+- Set the request locale in both the locale layout and page render path for better `next-intl` rendering performance and consistency.
+
+### Notes
+
+- This release focuses on profile freshness and locale rendering optimizations without changing the overall site structure.
+
 ## [2.1.0] – 2025-10-17
 
 ### Added
