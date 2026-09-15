@@ -4,6 +4,7 @@ export const github = "https://github.com/champclarinet";
 export const email = "mailto:champbassist159@gmail.com";
 export const medium = "https://medium.com/@champbassist159";
 export const line = "https://line.me/ti/p/EldlUob9jm";
+export const phone = "+66940836940";
 export const react = "https://react.dev";
 export const synapes = "https://synapes.ai";
 export const nextjs = "https://nextjs.org";
