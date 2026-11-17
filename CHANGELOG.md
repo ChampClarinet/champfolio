@@ -1,5 +1,11 @@
 # Changelog
 
+## [2.2.3] - 2026-11-17
+
+### Fixed
+
+- Updated Next.js to 16.4.5 for published security fixes.
+
 ## [2.2.0] - 2026-07-15
 
 ### Added
