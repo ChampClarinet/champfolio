@@ -1,5 +1,11 @@
 # Changelog
 
+## [2.2.4] - 2026-11-17
+
+### Fixed
+
+- Aligned next-intl with the Next.js 16 compatibility range.
+
 ## [2.2.3] - 2026-11-17
 
 ### Fixed
